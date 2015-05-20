@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="250px" height="250px" viewBox="0 0 250 250" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3 (11970) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Artboard-3" sketch:type="MSArtboardGroup">
+            <g id="Group" sketch:type="MSLayerGroup" transform="translate(-1.000000, 0.000000)">
+                <path d="M25.1359692,215.283267 L0,125.773066 C0,125.773066 29.3009906,101.866928 49.5463066,101.866928 C70.9431815,101.866928 135,118 135,118 L131.435599,184.5 L135,261.455811 L25.1359692,215.283267 Z" id="Rectangle-1-Copy-3" fill="#E66D6D" sketch:type="MSShapeGroup"></path>
+                <path d="M0,0 L126,0 L126,125 L0,0 Z" id="Rectangle-1-Copy-8" fill="#DD6B6B" sketch:type="MSShapeGroup" transform="translate(63.000000, 62.500000) scale(-1, -1) translate(-63.000000, -62.500000) "></path>
+                <path d="M170.709683,194.882922 C150.748704,175.126074 126,125.288546 126,125.288546 L189,114 L252,125.288546 L252,250 C252,250 192.748704,216.696559 170.709683,194.882922 Z" id="Rectangle-1-Copy" fill="#DD6B6B" sketch:type="MSShapeGroup"></path>
+                <path d="M203.159176,182.874037 C180.638644,160.53224 126,125 126,125 L252,125 L252,250 C252,250 222.638644,202.198907 203.159176,182.874037 Z" id="Rectangle-1-Copy-10" fill="#D76666" sketch:type="MSShapeGroup" transform="translate(189.000000, 187.500000) scale(-1, -1) translate(-189.000000, -187.500000) "></path>
+                <path d="M43.6333208,70.7204056 C22.4637733,49.7188704 0,0 0,0 L126,0 L126,125 C126,125 64.4637733,91.3855371 43.6333208,70.7204056 Z" id="Rectangle-1" fill="#D76666" sketch:type="MSShapeGroup"></path>
+                <path d="M166.370743,105.305641 C146.725629,85.8164412 126,0 126,0 L252,0 L252,125 C252,125 188.725629,127.483108 166.370743,105.305641 Z" id="Rectangle-1-Copy-2" fill="#E66D6D" sketch:type="MSShapeGroup"></path>
+                <path d="M175.430596,68.304615 C154.247733,47.0290406 117,0 117,0 L241.455289,0 C241.455289,0 250,31.25 250,62.5 C250,93.75 241.455289,125 241.455289,125 C241.455289,125 195.73283,88.6957073 175.430596,68.304615 Z" id="Rectangle-1-Copy-9" fill="#E16363" sketch:type="MSShapeGroup" transform="translate(183.500000, 62.500000) scale(-1, -1) translate(-183.500000, -62.500000) "></path>
+                <path d="M87.0916015,171.916558 C66.489897,151.478359 0,125 0,125 L126,125 L126,250 C126,250 108.489897,193.145026 87.0916015,171.916558 Z" id="Rectangle-1-Copy-11" fill="#E16363" sketch:type="MSShapeGroup" transform="translate(63.000000, 187.500000) scale(-1, -1) translate(-63.000000, -187.500000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>
