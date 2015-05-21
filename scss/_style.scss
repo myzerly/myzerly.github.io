@@ -44,7 +44,7 @@ a {
 //box-shadow: effects for pseudo elements
 
 .top-nav {
-  margin-top: -6.5rem;
+  margin-top: -7rem;
   li {
     display: inline;
     margin-left: 2rem;
@@ -124,7 +124,11 @@ h5.bottom-nav-header {
 }
 
 .code-party-nav {
-  max-width: 2em;
+  max-width: 4em;
+}
+
+.code-party-title {
+  max-width: 200px;
 }
 
 header {
