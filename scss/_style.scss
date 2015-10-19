@@ -25,6 +25,7 @@ a {
   &.bottom-nav:visited {
     color: black;
   }
+
 }
 
 // .top-nav-list {
@@ -57,10 +58,7 @@ a {
 }
 
 .top-nav-background {
-  background: white;
-  height: 4.25rem;
   width: 100%;
-  position: fixed;
   z-index: 1;
 }
 
@@ -132,7 +130,10 @@ h5.bottom-nav-header {
 }
 
 header {
-  background: url(../img/background1.svg) repeat 0 0;
+  background: url(../img/climbing.png) 0 0;
+  background-size: cover; 
+  height: 100%;
+  width: auto;
 }
 
 #projects {
@@ -166,6 +167,7 @@ header {
   .blurb-about-me {
     margin-left: 10%;
     margin-right: 10%;
+    color: white;
   }
   .title-about-me {
     font-size: 28px;
