@@ -7,17 +7,15 @@ h2 {
 }
 
 a {
-  color: black;
+  color: white;
   transition-property: font-size, font-weight;
   transition-duration: .5s;
   text-decoration: none;
-  &:hover {
-    font-size: 17px;
-    font-weight: 600;
-    color: black;
-  }
   &.top-nav-list:visited {
     color: black;
+  }
+  &.top-nav-list {
+    color: black !important;
   }
   &.top-nav-list:focus {
     color: black;
@@ -131,8 +129,7 @@ h5.bottom-nav-header {
 
 header {
   background: url(../img/climbing.png) 0 0;
-  background-size: cover; 
-  height: 100%;
+  background-size: cover;
   width: auto;
 }
 
