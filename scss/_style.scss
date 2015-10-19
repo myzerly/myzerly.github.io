@@ -2,197 +2,27 @@ body, h1, h2, header {
   font-family: courier, sans-serif !important;
 }
 
-h2 {
-  padding-bottom: 20px;
-}
-
-a {
-  color: white;
-  transition-property: font-size, font-weight;
-  transition-duration: .5s;
-  text-decoration: none;
-  &.top-nav-list:visited {
-    color: black;
-  }
-  &.top-nav-list {
-    color: black !important;
-  }
-  &.top-nav-list:focus {
-    color: black;
-  }
-  &.bottom-nav:visited {
-    color: black;
-  }
-
-}
-
-// .top-nav-list {
-//   a {
-//     display: block;
-//     height: 100%;
-//     padding-left: 20px;
-//     transition-property: padding-left, font-weight;
-//     transition-duration: .5s;
-//     transition-delay: 0s;
-//     &:hover {
-//       padding-left: 30px;
-//       font-weight: 900;
-//     }
-//   }
-// }
-//box-shadow: effects for pseudo elements
-
-.top-nav {
-  margin-top: -7rem;
-  li {
-    display: inline;
-    margin-left: 2rem;
-    width: 100%;
-  }
-}
-
-.nav-bump {
-  padding-left: 14rem;
-}
-
-.top-nav-background {
-  width: 100%;
-  z-index: 1;
-}
-
-.link-to-top {
-  width: 100%;
-  text-align: center;
-  display: block;
-}
-
-.bottom-nav {
-  text-align: center;
-}
-
-h5.bottom-nav-header {
-  padding-top: 10px;
-}
-
-.profile-top-nav {
-  height: 50px;
-  font-size: 14px;
-  z-index: 1;
-  position: fixed;
-  padding-top: 10px;
-  padding-left: 10px;
-}
-
-.top-nav-list {
-  ul {
-    display: inline;
-    list-style-type: none;
-    text-decoration: none;
-    color: black;
-  }
-}
-
-.myzerly-logo {
-  max-height: 200px;
-  margin-left: -40px;
-  margin-bottom: -20px;
-  margin-top: -35px;
-  max-width: none;
-
-  &:hover {
-      cursor: pointer;
-    }
-  }
-.myzerly-logo-small {
-  position: fixed;
-  z-index: -1;
-  margin-right: auto;
-  margin-left: auto;
-  margin-left: -5%;
-  bottom: -45px;
-  opacity: .25;
-}
-
-.myzerly-logo-marquis {
-  padding-right: 5%;
-  margin-bottom: -5%;
-  margin-top: -10%;
-}
-
-.code-party-nav {
-  max-width: 4em;
-}
-
-.code-party-title {
-  max-width: 200px;
-}
-
 header {
   background: url(../img/climbing.png) 0 0;
   background-size: cover;
   width: auto;
 }
 
-#projects {
-  text-align: center;
-}
-
-.hero {
-  padding: 2rem 0;
-  padding-bottom: 4rem;
+.copy-about-me {
+  color: white;
+  font-size: 14px;
+  padding-bottom: 20rem;
 }
 
 .title-about-me {
   color: white;
-  text-align: center;
+  padding-bottom: 1em;
 }
 
-.portfolio-thumbs {
-  margin-right: 10%;
-}
-
-.back-to-top {
-  text-align: center;
-}
-
-.floor {
-  height: 95%;
-  text-align: center;
-}
-
-@media (min-width: 400px) {
-  .blurb-about-me {
-    margin-left: 10%;
-    margin-right: 10%;
-    color: white;
-  }
-  .title-about-me {
-    font-size: 28px;
-    font-family: inherit;
-  }
-  .nav-pad {
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-}
-
-@media (min-width: 625px) {
-  .blurb-about-me {
-    padding-top: 1rem;
-  }
-  .title-about-me {
-    padding-top: 4rem;
-  }
-}
-
-@media  (min-width: 1000px) {
-  .blurb-about-me {
-    padding-right: 1rem;
-    padding-left: 1rem;
-  }
-  .project-title {
-    padding-top: 5rem;
-  }
+.myzerly-logo {
+  height: 75px;
+  width: auto;
+  margin: 25px;
 }
 
 // Checks which media querie you've loaded         
@@ -217,9 +47,3 @@ header {
     content: 'min 1000';
   }
 }
-
-// $anything-you-want: 1.5rem;
-
-// .hero {
-//   margin-bottom: $anything-you-want;
-// }
