@@ -1,28 +1,38 @@
-body, h1, h2, header {
-  font-family: courier, sans-serif !important;
+body {
+  font-family: 'Rambla', serif;
 }
 
 header {
   background: url(../img/climbing.png) 0 0;
   background-size: cover;
   width: auto;
+  font-family: 'Rambla', serif;
 }
 
 .copy-about-me {
   color: white;
   font-size: 14px;
-  padding-bottom: 20rem;
+  padding-bottom: 10rem;
 }
 
 .title-about-me {
   color: white;
-  padding-bottom: 1em;
+  padding-bottom: .5rem;
 }
 
 .myzerly-logo {
   height: 100px;
   width: auto;
   margin: 25px;
+}
+
+.bottom-nav {
+  background: black;
+  background-size: cover;
+}
+
+a:link {
+  color: white;
 }
 
 // Checks which media querie you've loaded         
