@@ -8,6 +8,10 @@ header {
   width: auto;
 }
 
+a {
+    color: #50BFAB;
+  }
+
 .title-about-me {
   color: white;
   padding-bottom: .5rem;
@@ -17,25 +21,16 @@ header {
   color: white;
   font-size: 14px;
   margin-bottom: 10rem;
-  a {
-    color: white;
-  }
 }
 
 .about-me-background {
-  background: black;
-  opacity: 0.3;
+  background-color:rgba(0,0,0,0.5);
 }
 
 .myzerly-logo {
   height: 100px;
   width: auto;
   margin: 25px;
-}
-
-.bottom-nav {
-  background: black;
-  background-size: cover;
 }
 
 // Checks which media querie you've loaded         
