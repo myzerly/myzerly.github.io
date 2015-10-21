@@ -12,19 +12,24 @@ a {
     color: #50BFAB;
   }
 
+.hero {
+  margin-bottom: 1rem;
+}
+
 .title-about-me {
   color: white;
-  padding-bottom: .5rem;
+  padding-bottom: 1rem;
 }
 
 .copy-about-me {
   color: white;
-  font-size: 14px;
-  margin-bottom: 10rem;
+  font-size: 20px;
+  margin-bottom: 15rem;
 }
 
 .about-me-background {
-  background-color:rgba(0,0,0,0.5);
+  background-color:rgba(0,0,0,0.7);
+  padding: 5px;
 }
 
 .myzerly-logo {
@@ -34,24 +39,24 @@ a {
 }
 
 // Checks which media querie you've loaded         
-@media (min-width: 400px) {
-  body::before { 
-    content: 'min 400';
-    position: fixed; 
-    top: 0; 
-    right: 0; 
-    background: #eee; 
-    padding: 5px;
-  }
+// @media (min-width: 400px) {
+//   body::before { 
+//     content: 'min 400';
+//     position: fixed; 
+//     top: 0; 
+//     right: 0; 
+//     background: #eee; 
+//     padding: 5px;
+//   }
 
-}
-@media (min-width: 625px) {
-  body::before { 
-    content: 'min 625';
-  }
-}
-@media (min-width: 1000px) {
-  body::before { 
-    content: 'min 1000';
-  }
-}
+// }
+// @media (min-width: 625px) {
+//   body::before { 
+//     content: 'min 625';
+//   }
+// }
+// @media (min-width: 1000px) {
+//   body::before { 
+//     content: 'min 1000';
+//   }
+// }
