@@ -1,4 +1,4 @@
-body, h1, h2, h3, h4, h5, h6 {
+ body, h1, h2, h3, h4, h5, h6 {
   font-family: 'Rambla', serif !important;
 }
 
@@ -29,6 +29,7 @@ a {
 
 .about-me-background {
   background-color:rgba(0,0,0,0.7);
+  background: cover;
   padding: 5px;
 }
 
