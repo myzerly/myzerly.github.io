@@ -11,7 +11,9 @@ header {
 a {
     color: #50BFAB;
   }
-
+strong {
+  color: #50BFAB;
+}
 .hero {
   margin-bottom: 1rem;
 }
@@ -25,6 +27,11 @@ a {
   color: white;
   font-size: 20px;
   margin-bottom: 15rem;
+}
+
+#lessons{
+  background-color:rgba(0,0,0,0.7);
+  padding: 10px;
 }
 
 .about-me-background {
