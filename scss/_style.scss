@@ -1,9 +1,9 @@
-body, h1, h2, h3, h4, h5, h6 {
+ body, h1, h2, h3, h4, h5, h6 {
   font-family: 'Rambla', serif !important;
 }
 
 header {
-  background: url(../img/climbing.png) 0 0;
+  background: url(../img/climbing.png) center;
   background-size: cover;
   width: auto;
 }
@@ -29,6 +29,7 @@ a {
 
 .about-me-background {
   background-color:rgba(0,0,0,0.7);
+  background: cover;
   padding: 5px;
 }
 
