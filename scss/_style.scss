@@ -2,11 +2,10 @@
   font-family: 'Rambla', serif !important;
 }
 
-header.hero {
+body.home-page {
   background: url(../img/climbing.png) center;
   background-size: cover;
   width: auto;
-  // height: 100%;
 }
 
 header.lessons {
@@ -22,10 +21,16 @@ header.prototypes {
   // height: 100%;
 }
 
-
 a {
     color: #50BFAB;
   }
+
+.header-menu {
+  list-style: none;
+  a {
+    color: white;
+  }
+}
 strong {
   color: #50BFAB;
 }
