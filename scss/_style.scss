@@ -3,7 +3,7 @@
 }
 
 body.home-page {
-  background: url(../img/climbing.png) center;
+  background: url(../img/climbing2.jpeg) center;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -32,7 +32,8 @@ a {
     color: white;
   }
   a:hover {
-    color: #50BFAB; 
+    background-color:rgba(0,0,0,0.7);
+    padding: 5px; 
   }
 }
 strong {
@@ -45,20 +46,20 @@ strong {
 .header-title {
   color: white;
   padding-bottom: 1rem;
-  margin-top: 6rem;
+  // margin-top: 6rem;
 }
 
 .header-copy {
   color: white;
   font-size: 20px;
-  margin-bottom: 15rem;
+  text-align: center;
+  // margin-bottom: 15rem;
 }
 
 .header-text-background {
   background-color:rgba(0,0,0,0.7);
   background: cover;
   padding: 10px;
-  text-align: center;
 }
 
 .myzerly-logo {
