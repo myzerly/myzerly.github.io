@@ -5,7 +5,7 @@
 body.home-page {
   background: url(../img/climbing.png) center;
   background-size: cover;
-  width: auto;
+  background-repeat: no-repeat;
 }
 
 header.lessons {
@@ -18,6 +18,7 @@ header.lessons {
 header.prototypes {
   background: url(../img/case-studies.jpg) center;
   background-size: cover;
+  width: auto;
   // height: 100%;
 }
 
@@ -30,6 +31,9 @@ a {
   a {
     color: white;
   }
+  a:hover {
+    color: #50BFAB; 
+  }
 }
 strong {
   color: #50BFAB;
@@ -41,7 +45,7 @@ strong {
 .header-title {
   color: white;
   padding-bottom: 1rem;
-  margin-top: 8rem;
+  margin-top: 6rem;
 }
 
 .header-copy {
