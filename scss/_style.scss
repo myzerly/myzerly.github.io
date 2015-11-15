@@ -1,9 +1,8 @@
  body, h1, h2, h3, h4, h5, h6 {
   font-family: 'Rambla', serif !important;
 }
-
 body.home-page {
-  background: url(../img/climbing2.jpeg) center;
+  background: url(../img/climbing2.png) 0 0 ;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -33,12 +32,39 @@ a {
   }
   a:hover {
     background-color:rgba(0,0,0,0.7);
-    padding: 5px; 
+    padding: 10px; 
+  }
+  li {
+    padding-bottom: 10px;
   }
 }
+
+.menu-icon {
+  height: 30px;
+  width: auto;
+}
+
+// .header-menu-home {
+//   list-style: none;
+//   a {
+//     color: #50BFAB;
+//   }
+//   a:hover {
+//     background-color:rgba(255,255,255,0.7);
+//     padding: 5px; 
+//   }
+// }
+
+
+.body-intro {
+  position: fixed;
+  bottom: 0;
+}
+
 strong {
   color: #50BFAB;
 }
+
 .hero {
   margin-bottom: 1rem;
 }
@@ -46,19 +72,23 @@ strong {
 .header-title {
   color: white;
   padding-bottom: 1rem;
-  // margin-top: 6rem;
 }
 
 .header-copy {
   color: white;
   font-size: 20px;
-  // margin-bottom: 15rem;
 }
 
 .header-text-background {
   background-color:rgba(0,0,0,0.7);
   background: cover;
   margin-top: 5rem;
+}
+
+.homescreen-text-background {
+  background-color:rgba(0,0,0,0.7);
+  background: cover;
+  margin-top: 6rem;
 }
 
 .myzerly-logo {
