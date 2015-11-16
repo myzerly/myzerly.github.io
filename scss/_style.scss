@@ -11,51 +11,14 @@ header.lessons {
   background: url(../img/lessons.jpg) center;
   background-size: cover;
   width: auto;
+  margin-bottom: 3rem;
 }
 
 header.prototypes {
   background: url(../img/case-studies.jpg) center;
   background-size: cover;
   width: auto;
-}
-
-a {
-    color: #50BFAB;
-  }
-
-.header-menu {
-  list-style: none;
-  a {
-    color: white;
-  }
-  a:hover {
-    padding: 10px; 
-  }
-  li {
-    padding-bottom: 10px;
-  }
-}
-
-.menu-icon {
-  height: 30px;
-  width: auto;
-}
-
-// .header-menu-home {
-//   list-style: none;
-//   a {
-//     color: #50BFAB;
-//   }
-//   a:hover {
-//     background-color:rgba(255,255,255,0.7);
-//     padding: 5px; 
-//   }
-// }
-
-
-.body-intro {
-  position: fixed;
-  bottom: 0;
+  margin-bottom: 3rem;
 }
 
 strong {
@@ -82,10 +45,39 @@ strong {
   margin-top: 5rem;
 }
 
-.homescreen-text-background {
-  background-color:rgba(0,0,0,0.7);
-  background: cover;
-  margin-top: 6rem;
+a {
+    color: #50BFAB;
+  }
+
+.header-menu {
+  list-style: none;
+  a {
+    color: white;
+  }
+  a:hover {
+    padding: 10px; 
+  }
+  li {
+    padding-bottom: 10px;
+  }
+}
+
+.menu-icon {
+  height: 30px;
+  width: auto;
+}
+
+.body-intro {
+  position: fixed;
+  bottom: 0;
+}
+
+.lesson-sections {
+  padding-bottom: 3rem;
+}
+
+.wistia-vid {
+  margin-bottom: 50px;
 }
 
 .myzerly-logo {
@@ -94,9 +86,7 @@ strong {
   margin: 25px;
 }
 
-.wistia-vid {
-  margin-bottom: 50px;
-}
+
 
 // Checks which media querie you've loaded         
 // @media (min-width: 400px) {
