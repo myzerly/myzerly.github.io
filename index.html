@@ -7,8 +7,8 @@
     <meta name="description" content="Nic Edwards Portfolio">
     <meta name="keywords" content="HTML,CSS,JavaScript,lessons,blog,designer,design,UX,UI,AI,visual,ZURB,Notable,Photoshop,Illustrator,Adobe">
     <title>Myzerly</title>
-    <link rel="stylesheet" type="text/css" href="css/app.css">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Rambla">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
     <link rel="icon" type="image/png" href="img/favicomatic/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="img/favicomatic/favicon-16x16.png" sizes="16x16" />
     <script src="js/modernizr.js"></script>
@@ -29,7 +29,11 @@
     </ul>
     <div class="homescreen-text-background">
       <div id="top" class="row">
-        <div class="small-12 medium-8 small-centered column">
+        <div class="hide-for-small medium-8 small-centered column">
+          <h1 class="header-title">What's up? I'm Nic.</h1>
+          <p class="header-copy"><a href="https://www.linkedin.com/pub/nic-edwards/36/a77/7a5/" target="_blank">I'm a product designer</a>, I worked on <a href="http://zurb.com/notable" target="_blank">Notable</a> and I love design. I build awesome products because I talk with customers to solve their problems.</p>
+        </div>
+        <div class="small-12 hide-for-medium hide-for-large column small-homescreen-text-background">
           <h1 class="header-title">What's up? I'm Nic.</h1>
           <p class="header-copy"><a href="https://www.linkedin.com/pub/nic-edwards/36/a77/7a5/" target="_blank">I'm a product designer</a>, I worked on <a href="http://zurb.com/notable" target="_blank">Notable</a> and I love design. I build awesome products because I talk with customers to solve their problems.</p>
         </div>
@@ -62,3 +66,7 @@
 
 <!-- <a href="https://www.linkedin.com/pub/nic-edwards/36/a77/7a5/" target="_blank">LinkedIn</a>
 <a href="https://twitter.com/NicEdwards85" target="_blank">Twitter</a> -->
+
+<!-- Useful Git command to remove files from cache -->
+
+<!-- git filter-branch --index-filter 'git rm -r --cached --ignore-unmatch img/climbing2.psd' -f HEAD -->
