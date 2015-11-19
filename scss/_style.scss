@@ -17,16 +17,19 @@ a {
     color: #50BFAB;
   }
 
-.header-menu {
+.nav-menu {
   list-style: none;
+  float: right;
   a {
-    color: #fff;
+    color: #000;
   }
   a:hover {
     padding: 10px; 
   }
   li {
     padding-bottom: 10px;
+    padding-right: 20px;
+    padding-top: 20px;
     display: inline-block;
   }
 }
