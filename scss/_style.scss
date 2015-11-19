@@ -1,22 +1,16 @@
- body, h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Rambla', serif !important;
 }
-body.home-page {
-  background: url(../img/climbing2.jpg) 0 0 ;
+
+p, span {
+  font-weight: 'Open Sans', serif !important;
+}
+
+header.home-page-background {
+  background: url(../img/climbing2.jpg) 0 0;
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-header.lessons {
-  background: url(../img/lessons.jpg) center;
-  background-size: cover;
-  width: auto;
-}
-
-header.prototypes {
-  background: url(../img/case-studies.jpg) center;
-  background-size: cover;
-  width: auto;
+  height: 100%;
 }
 
 a {
@@ -26,13 +20,14 @@ a {
 .header-menu {
   list-style: none;
   a {
-    color: white;
+    color: #fff;
   }
   a:hover {
     padding: 10px; 
   }
   li {
     padding-bottom: 10px;
+    display: inline-block;
   }
 }
 
@@ -41,61 +36,10 @@ a {
   width: auto;
 }
 
-// .header-menu-home {
-//   list-style: none;
-//   a {
-//     color: #50BFAB;
-//   }
-//   a:hover {
-//     background-color:rgba(255,255,255,0.7);
-//     padding: 5px; 
-//   }
-// }
-
-
-.body-intro {
-  position: fixed;
-  bottom: 0;
-}
-
-strong {
-  color: #50BFAB;
-}
-
-.hero {
-  margin-bottom: 1rem;
-}
-
-.header-title {
-  color: white;
-  padding-bottom: 1rem;
-}
-
-.header-copy {
-  color: white;
-  font-size: 20px;
-}
-
-.header-text-background {
-  background-color:rgba(0,0,0,0.7);
-  background: cover;
-  margin-top: 5rem;
-}
-
-.homescreen-text-background {
-  background-color:rgba(0,0,0,0.7);
-  background: cover;
-  margin-top: 6rem;
-}
-
 .myzerly-logo {
   height: 100px;
   width: auto;
   margin: 25px;
-}
-
-.wistia-vid {
-  margin-bottom: 50px;
 }
 
 // Checks which media querie you've loaded         
