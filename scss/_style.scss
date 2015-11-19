@@ -6,6 +6,13 @@ p, span {
   font-weight: 'Open Sans', serif !important;
 }
 
+nav {
+  .name-of-site-author {
+    line-height: 2.5;
+    font-size: 1.75rem;
+  }
+}
+
 header.home-page-background {
   background: url(../img/climbing2.jpg) 0 0;
   background-size: cover;
@@ -24,13 +31,13 @@ a {
     color: #000;
   }
   a:hover {
-    padding: 10px; 
+    color: #fff; 
   }
   li {
-    padding-bottom: 10px;
     padding-right: 20px;
     padding-top: 20px;
     display: inline-block;
+    font-size: 1.25rem;
   }
 }
 
@@ -39,10 +46,12 @@ a {
   width: auto;
 }
 
-.myzerly-logo {
-  height: 100px;
+.nic-logo {
+  height: 50px;
   width: auto;
-  margin: 25px;
+  float: left;
+  margin-top: 12px;
+  padding-right: 20px
 }
 
 // Checks which media querie you've loaded         
