@@ -1,4 +1,4 @@
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, span {
   font-family: 'Roboto', serif !important;
 }
 
@@ -17,6 +17,10 @@ h2 {
   }
 }
 
+p {
+  font-weight: 'Open Sans', serif !important;
+}
+
 nav {
   .name-of-site-author {
     line-height: 2.5;
@@ -24,15 +28,25 @@ nav {
   }
 }
 
-header.home-page-background {
-  background: url(../img/climbing2.jpg) 0 0;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-bottom: 2rem;
+header {
+  &.home-page-background {
+    background: url(../img/climbing2.jpg) 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+  }
 }
 
-p, span {
-  font-weight: 'Open Sans', serif !important;
+.show-work-tiles {
+    margin-bottom: 200px;
+  }
+
+footer {
+  &.footer-navigation {
+    background-color: #000;
+    color: #fff;
+    margin-top: 3rem;
+  }
 }
 
 .nav-menu {
