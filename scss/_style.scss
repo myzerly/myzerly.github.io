@@ -69,6 +69,15 @@ footer {
 .menu-icon {
   height: 30px;
   width: auto;
+  &.github-icon:hover {
+    background-image: url(../img/climbing2.jpg);
+  }
+  &.linkedin-icon:hover {
+
+  }
+  &.twitter-icon:hover {
+
+  }
 }
 
 .nic-logo {
@@ -89,13 +98,15 @@ footer {
     background-color: rgba(0, 0, 0, 0.7);
     &:before{
       content: "Check this out!";
-      text-align: center;
-      padding-top: 20px;
     }
   }
-  &.shame {
-    float: right;
+
+  div:hover {
+    background-color: rgba(0, 0, 0, 0.7);
   }
+  // &.shame {
+  //   float: right;
+  // }
 }
 
 // Checks which media querie you've loaded         
