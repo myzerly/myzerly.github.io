@@ -23,8 +23,8 @@ p {
 
 nav {
   .name-of-site-author {
-    line-height: 2.5;
-    font-size: 1.75rem;
+    line-height: 3.25;
+    font-size: 1.25rem;
   }
 }
 
@@ -33,14 +33,15 @@ header {
     background: url(../img/climbing2.jpg) 0 0;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-bottom: 20px;
+    margin-bottom: 1.5rem;
   }
 }
 
 .show-work-tiles {
-    margin-bottom: 200px;
+    margin-bottom: 5rem;
   }
 
+//footer styling for social icons and copywrite stuff
 footer {
   &.footer-navigation {
     background-color: #000;
@@ -49,9 +50,31 @@ footer {
   }
 }
 
-.nav-menu {
+.footer-copyright-text {
+  font-size: 0.75rem;
+  color: #aaa;
+}
+
+//nav stylings both top and bottom with menu icons and logo
+.top-nav-menu {
   list-style: none;
   float: right;
+  a {
+    color: #a2a2a2;
+  }
+  a:hover {
+    color: #000; 
+  }
+  li {
+    padding-right: 1rem;
+    padding-top: 1.25rem;
+    display: inline-block;
+  }
+}
+
+.footer-nav-menu {
+  list-style: none;
+  text-align: center;
   a {
     color: #000;
   }
@@ -59,33 +82,28 @@ footer {
     color: #fff; 
   }
   li {
-    padding-right: 20px;
-    padding-top: 20px;
+    padding-right: 1.5rem;
+    padding-top: 1.5rem;
     display: inline-block;
-    font-size: 1.25rem;
   }
 }
 
 .menu-icon {
-  height: 30px;
+  height: 40px;
   width: auto;
-  &.github-icon:hover {
-    background-image: url(../img/climbing2.jpg);
-  }
-  &.linkedin-icon:hover {
+}
 
-  }
-  &.twitter-icon:hover {
-
-  }
+.linkedin-icon:hover {
+  fill: #007AB8;
 }
 
 .nic-logo {
-  height: 50px;
+  height: 35px;
   width: auto;
   float: left;
-  margin-top: 12px;
-  padding-right: 20px
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-right: 1rem;
 }
 
 //place-holder box for "work" images
@@ -94,19 +112,28 @@ footer {
   width: 300px;
   background-color: #000;
   color: #fff;
+  margin-bottom: 2rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   &:hover {
-    background-color: rgba(0, 0, 0, 0.7);
-    &:before{
-      content: "Check this out!";
+    background-color: rgba(0, 0, 0, 0.8);
+    &:before {
+      content: "this is stuff";
     }
   }
+}
 
-  div:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+.box1 {
+  @media (min-width: 500px) {
+  float: right;
   }
-  // &.shame {
-  //   float: right;
-  // }
+}
+
+.box2 {
+  @media (min-width: 500px) {
+  float: left;
+  }
 }
 
 // Checks which media querie you've loaded         
