@@ -1,4 +1,4 @@
-h1, h2, h3, h4, h5, h6, span {
+h1, h2, h3, h4, h5, h6, body, span {
   font-family: 'Roboto', serif !important;
 }
 
@@ -56,19 +56,24 @@ footer {
 }
 
 //nav stylings both top and bottom with menu icons and logo
+.top-page-navigation {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
 .top-nav-menu {
   list-style: none;
   float: right;
   a {
-    color: #a2a2a2;
+    color: #000;
   }
   a:hover {
-    color: #000; 
+    color: #a2a2a2; 
   }
   li {
-    padding-right: 1rem;
-    padding-top: 1.25rem;
+    padding-right: 1.25rem;
+    padding-top: 1rem;
     display: inline-block;
+    font-size: 1.25rem;
   }
 }
 
