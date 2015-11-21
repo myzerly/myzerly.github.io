@@ -1,45 +1,139 @@
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Rambla', serif !important;
+h1, h2, h3, h4, h5, h6, span {
+  font-family: 'Roboto', serif !important;
 }
 
-p, span {
+h1 {
+  &.header-title-page-copy {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    color: #fff;
+  }
+}
+
+h2 {
+  &.section-page-title {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+}
+
+p {
   font-weight: 'Open Sans', serif !important;
 }
 
-header.home-page-background {
-  background: url(../img/climbing2.jpg) 0 0;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100%;
+nav {
+  .name-of-site-author {
+    line-height: 3.25;
+    font-size: 1.25rem;
+  }
 }
 
-a {
-    color: #50BFAB;
+header {
+  &.home-page-background {
+    background: url(../img/climbing2.jpg) 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.show-work-tiles {
+    margin-bottom: 5rem;
   }
 
-.header-menu {
-  list-style: none;
-  a {
+//footer styling for social icons and copywrite stuff
+footer {
+  &.footer-navigation {
+    background-color: #000;
     color: #fff;
+    margin-top: 3rem;
+  }
+}
+
+.footer-copyright-text {
+  font-size: 0.75rem;
+  color: #aaa;
+}
+
+//nav stylings both top and bottom with menu icons and logo
+.top-nav-menu {
+  list-style: none;
+  float: right;
+  a {
+    color: #a2a2a2;
   }
   a:hover {
-    padding: 10px; 
+    color: #000; 
   }
   li {
-    padding-bottom: 10px;
+    padding-right: 1rem;
+    padding-top: 1.25rem;
+    display: inline-block;
+  }
+}
+
+.footer-nav-menu {
+  list-style: none;
+  text-align: center;
+  a {
+    color: #000;
+  }
+  a:hover {
+    color: #fff; 
+  }
+  li {
+    padding-right: 1.5rem;
+    padding-top: 1.5rem;
     display: inline-block;
   }
 }
 
 .menu-icon {
-  height: 30px;
+  height: 40px;
   width: auto;
 }
 
-.myzerly-logo {
-  height: 100px;
+.linkedin-icon:hover {
+  fill: #007AB8;
+}
+
+.nic-logo {
+  height: 35px;
   width: auto;
-  margin: 25px;
+  float: left;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-right: 1rem;
+}
+
+//place-holder box for "work" images
+.box {
+  height: 300px;
+  width: 300px;
+  background-color: #000;
+  color: #fff;
+  margin-bottom: 2rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    &:before {
+      content: "this is stuff";
+    }
+  }
+}
+
+.box1 {
+  @media (min-width: 500px) {
+  float: right;
+  }
+}
+
+.box2 {
+  @media (min-width: 500px) {
+  float: left;
+  }
 }
 
 // Checks which media querie you've loaded         
