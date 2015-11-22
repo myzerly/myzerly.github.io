@@ -1,4 +1,4 @@
-h1, h2, h3, h4, h5, h6, body, span {
+h1, h2, h3, h4, h5, h6, body, span, p {
   font-family: 'Roboto', serif !important;
 }
 
@@ -17,14 +17,11 @@ h2 {
   }
 }
 
-p {
-  font-weight: 'Open Sans', serif !important;
-}
-
 nav {
   .name-of-site-author {
-    line-height: 3.25;
-    font-size: 1.25rem;
+    line-height: 2.75;
+    font-size: 1.5rem;
+    font-weight: 900;
   }
 }
 
