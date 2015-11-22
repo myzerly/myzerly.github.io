@@ -102,8 +102,28 @@ footer {
   width: auto;
 }
 
-.linkedin-icon:hover {
-  fill: #007AB8;
+// on hover states for bottom nav menu's icons
+.on-hover-footer-icon {
+  height: 40px;
+  width: auto;
+  &:hover {
+    background-size: 40px auto;
+    .menu-icon {
+      opacity: 0.0;
+    }
+    &.linkedin {
+      background: url(../img/nav-icons/svg/linkedin-hover.svg);
+    }
+    &.github {
+      background: url(../img/nav-icons/svg/github-hover.svg);
+    }
+    &.mail {
+      background: url(../img/nav-icons/svg/mail-hover.svg);
+    }
+    &.twitter {
+      background: url(../img/nav-icons/svg/twitter-hover.svg);
+    }
+  }
 }
 
 .nic-logo {
