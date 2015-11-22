@@ -29,15 +29,14 @@ nav {
 }
 
 header {
-  // background-size: cover;
-  background-repeat: no-repeat;
   margin-bottom: 1.5rem;
+  background: cover;
+  width: 100%;
   &.home-page-background {
-    background: url(../img/climbing2.jpg) 0 0;
+    background: url(../img/artboard-1.jpg) no-repeat center 0 fixed;
   }
   &.work-page-background {
-    background: url(../img/case-studies.jpg) center;
-
+    background: url(../img/case-studies.jpg) no-repeat center center fixed;
   }
 }
 
