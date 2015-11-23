@@ -33,9 +33,20 @@ var lessons = [
     shortDescription: "Sketching is a great way to convey basic ideas when talking about page layouts of all sizes and natures. We all have ideas, but if we don't draw them consistently, it's really hard to show your vision. This is a 'how to' for sketching basic UI elements."
   },
   {
-  	
+    title: "Creating a Believable User: The Quick Guide to Personas",
+    lessonImage: "img/lessons/persona.png",
+    lessonLink: "http://zurb.com/university/lessons/creating-a-believable-user-the-quick-guide-to-personas",
+    shortDescription: "Personas aren't always necessary, but when we're trying to figure out different angles of attack when solving tough customer interactions, they help us take a look into what our potential users want and need. Check out this lesson to learn how to make some killer personas!"
   }
 ];
+
+// Pre-written inputs for other lessons
+  //{
+  //   title:
+  //   lessonImage:
+  //   lessonLink:
+  //   shortDescription:
+  // }
 
 //About me page 'overheard' from linkedin recommendations
 // app.controller('lessonController', function($scope){
