@@ -1,4 +1,4 @@
-h1, h2, h3, h4, h5, h6, span {
+h1, h2, h3, h4, h5, h6, body, span, p {
   font-family: 'Roboto', serif !important;
 }
 
@@ -7,6 +7,7 @@ h1 {
     padding-top: 10rem;
     padding-bottom: 10rem;
     color: #fff;
+    text-align: center;
   }
 }
 
@@ -17,23 +18,23 @@ h2 {
   }
 }
 
-p {
-  font-weight: 'Open Sans', serif !important;
-}
-
 nav {
   .name-of-site-author {
-    line-height: 3.25;
-    font-size: 1.25rem;
+    line-height: 2.75;
+    font-size: 1.5rem;
+    font-weight: 900;
   }
 }
 
 header {
+  margin-bottom: 5rem;
+  background: cover;
+  width: 100%;
   &.home-page-background {
-    background: url(../img/climbing2.jpg) 0 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-bottom: 1.5rem;
+    background: url(../img/artboard-1.jpg) no-repeat center 0 fixed;
+  }
+  &.work-page-background {
+    background: url(../img/case-studies.jpg) no-repeat center center fixed;
   }
 }
 
@@ -56,19 +57,24 @@ footer {
 }
 
 //nav stylings both top and bottom with menu icons and logo
+.top-page-navigation {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
 .top-nav-menu {
   list-style: none;
   float: right;
   a {
-    color: #a2a2a2;
+    color: #000;
   }
   a:hover {
-    color: #000; 
+    color: #a2a2a2; 
   }
   li {
-    padding-right: 1rem;
-    padding-top: 1.25rem;
+    padding-right: 1.25rem;
+    padding-top: 1rem;
     display: inline-block;
+    font-size: 1.25rem;
   }
 }
 
@@ -93,10 +99,31 @@ footer {
   width: auto;
 }
 
-.linkedin-icon:hover {
-  fill: #007AB8;
+// on hover states for bottom nav menu's icons
+.on-hover-footer-icon {
+  height: 40px;
+  width: auto;
+  &:hover {
+    background-size: 40px auto;
+    .menu-icon {
+      opacity: 0.0;
+    }
+    &.linkedin {
+      background: url(../img/nav-icons/svg/linkedin-hover.svg);
+    }
+    &.github {
+      background: url(../img/nav-icons/svg/github-hover.svg);
+    }
+    &.mail {
+      background: url(../img/nav-icons/svg/mail-hover.svg);
+    }
+    &.twitter {
+      background: url(../img/nav-icons/svg/twitter-hover.svg);
+    }
+  }
 }
 
+//Site logo styling
 .nic-logo {
   height: 35px;
   width: auto;
@@ -106,6 +133,24 @@ footer {
   padding-right: 1rem;
 }
 
+//lesson tile styling on lessons page
+.lesson-img:hover {
+    background-color: #F1F1F1;
+    opacity: 0.85;
+  }
+
+.panel {
+  background-color: #F1F1F1;
+  border: none;
+}
+
+.lesson-copy {
+  margin-bottom: 4rem;
+}
+
+.lesson-title {
+  margin-bottom: 1rem;
+}
 //place-holder box for "work" images
 .box {
   height: 300px;
@@ -118,8 +163,9 @@ footer {
   margin-right: auto;
   &:hover {
     background-color: rgba(0, 0, 0, 0.8);
-    &:before {
+    &:after {
       content: "this is stuff";
+      z-index: 1;
     }
   }
 }
