@@ -134,13 +134,23 @@ footer {
 }
 
 //lesson tile styling on lessons page
-.lesson-tile {
-  margin-bottom: 3rem;
-  &:hover {
+.lesson-img:hover {
     background-color: #F1F1F1;
+    opacity: 0.85;
   }
+
+.panel {
+  background-color: #F1F1F1;
+  border: none;
 }
 
+.lesson-copy {
+  margin-bottom: 4rem;
+}
+
+.lesson-title {
+  margin-bottom: 1rem;
+}
 //place-holder box for "work" images
 .box {
   height: 300px;
@@ -153,8 +163,9 @@ footer {
   margin-right: auto;
   &:hover {
     background-color: rgba(0, 0, 0, 0.8);
-    &:before {
+    &:after {
       content: "this is stuff";
+      z-index: 1;
     }
   }
 }
