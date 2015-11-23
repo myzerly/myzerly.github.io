@@ -151,22 +151,27 @@ footer {
 .copy-margin {
   margin-bottom: 1rem;
 }
-//place-holder box for "work" images
-.box {
+//"work" images' style
+.home-tile-image {
   height: 300px;
   width: 300px;
-  background-color: #000;
-  color: #fff;
   margin-bottom: 2rem;
-  text-align: center;
   margin-left: auto;
   margin-right: auto;
   &:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-    &:after {
-      content: "this is stuff";
-      z-index: 1;
-    }
+    opacity: 0.85;
+  }
+}
+
+.tile-1 {
+  @media (min-width: 500px) {
+  float: right;
+  }
+}
+
+.tile-2 {
+  @media (min-width: 500px) {
+  float: left;
   }
 }
 
@@ -175,17 +180,7 @@ footer {
   padding-left: 0.75rem;
 }
 
-.box1 {
-  @media (min-width: 500px) {
-  float: right;
-  }
-}
 
-.box2 {
-  @media (min-width: 500px) {
-  float: left;
-  }
-}
 
 // Checks which media querie you've loaded         
 // @media (min-width: 400px) {
