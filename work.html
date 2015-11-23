@@ -43,17 +43,36 @@
     </div>
   </header>
 
-<!-- Work links - lessons and case study (Using Angular)-->
+<!-- Case Study section -->
+<section>
+  <div class="row">
+    <div class="small-12 medium-8 large-6 medium-centered column">
+      <h1>Case Study: Notable's Hotspot Menu</h1>
+      <p>To preface this case study: Notable is a design collaboration platform that features a prototyping tool</p>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="small-12 medium-8 large-6 medium-centered column">
+      <h2></h2>
+      <p>For this project, we had a one week time frame to conduct user testing, get feedback, sketch it out then work with an engineer to implement and push out the code. The goal was "simple", make Notable's prototyping tool faster. It was a wild ride, but we produced some pretty amazing results!</p>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- lessons (Using Angular)-->
   <section>
     <div class="row">
-      <div class="small-12 medium-6 medium-centered column">
+      <div class="small-12 medium-8 large-6 medium-centered column">
         <h1>ZURB University Lessons</h1>
         <p>I wrote posts that got sent out to over 14,000 people with a 33%+ open rate. I taught basic approaches to the design process and ways to improve baseline skills. This would in turn double daily traffic to the <a href="zurb.com/notable">Notable marketing site.</a> I also hand coded the emails, and did the graphics using Adobe Illustrator.</p>
       </div>
     </div>
     <hr>
     <div class="row" ng-controller="lessonController">
-      <div class="small-12 medium-6 medium-centered column" ng-repeat="lessonItem in lessons">
+      <div class="small-12 medium-6 large-4 column" ng-repeat="lessonItem in lessons">
         <h3 class="lesson-title">{{lessonItem.title}}</h3>
         <a ng-href="{{lessonItem.lessonLink}}" target="_blank"><img class="lesson-img" ng-src="{{lessonItem.lessonImage}}"></a>
         <p class="lesson-copy panel">{{lessonItem.shortDescription}}</p>
@@ -66,10 +85,10 @@
     <div class="row">
       <div class="small-12 column">
         <ul class="footer-nav-menu">
-          <li><a href="https://www.linkedin.com/pub/nic-edwards/36/a77/7a5/" target="_blank"><img class="menu-icon" src="img/nav-icons/svg/linkedin.svg"></a></li>
-          <li><a href="#"><img class="menu-icon" src="img/nav-icons/svg/github.svg"></a></li>
-          <li><a href="https://twitter.com/NicEdwards85" target="_blank"><img class="menu-icon" src="img/nav-icons/svg/twitter.svg"></a></li>
-          <li><a href="mailto:nic.edwrds@gmail.com?Subject=Hey%20I%20saw%20your%20site!" target="_top"><img class="menu-icon" src="img/nav-icons/svg/mail.svg"></a></li>
+          <li><div class="on-hover-footer-icon linkedin"><a href="https://www.linkedin.com/pub/nic-edwards/36/a77/7a5/" target="_blank"><img class="menu-icon" src="img/nav-icons/svg/linkedin.svg"></a></div></li>
+          <li><div class="on-hover-footer-icon github"><a href="#"><img class="menu-icon" src="img/nav-icons/svg/github.svg"></a></li>
+          <li><div class="on-hover-footer-icon twitter"><a href="https://twitter.com/myzerly" target="_blank"><img class="menu-icon" src="img/nav-icons/svg/twitter.svg"></a></li>
+          <li><div class="on-hover-footer-icon mail"><a href="mailto:nic.edwrds@gmail.com?Subject=Hey%20I%20saw%20your%20site!" target="_top"><img class="menu-icon" src="img/nav-icons/svg/mail.svg"></a></li>
         </ul>
       </div>
       <div class="small-12 column text-center">

@@ -21,6 +21,12 @@ var lessons = [
     shortDescription: "Sometimes we look at what seems to be an insurmountable task, and we ask ourselves, “How am I going to get through this?” The short answer is timeboxing, but how should we approach it? We’ll explore a couple tips and tricks to timebox more effectively and better define this strategy."
   },
   {
+    title: "Assumptions suck; it’s time to get some real answers",
+    lessonImage: "img/lessons/user-testing.png",
+    lessonLink: "http://zurb.com/university/lessons/assumptions-suck-it-s-time-to-get-some-real-answers",
+    shortDescription: "Building something on a stack of assumptions gets you into trouble later on in a project, usually resulting in a couple iterations that could have been avoided. We design for people, not just ourselves! The good news is that it’s a lot easier than you think to keep your assumptions in check with some good ol’ user testing."
+  },
+  {
     title: "Navigating to Success: Sketching Navigational Components",
     lessonImage: "img/lessons/navigation-sketching.png",
     lessonLink: "http://zurb.com/university/lessons/navigating-to-success-sketching-navigational-components",
@@ -38,14 +44,15 @@ var lessons = [
     lessonLink: "http://zurb.com/university/lessons/creating-a-believable-user-the-quick-guide-to-personas",
     shortDescription: "Personas aren't always necessary, but when we're trying to figure out different angles of attack when solving tough customer interactions, they help us take a look into what our potential users want and need. Check out this lesson to learn how to make some killer personas!"
   }
+  
 ];
 
 // Pre-written inputs for other lessons
   //{
-  //   title:
-  //   lessonImage:
-  //   lessonLink:
-  //   shortDescription:
+  //   title: "",
+  //   lessonImage: "",
+  //   lessonLink: "",
+  //   shortDescription: ""
   // }
 
 //About me page 'overheard' from linkedin recommendations
