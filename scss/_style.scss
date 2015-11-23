@@ -7,6 +7,7 @@ h1 {
     padding-top: 10rem;
     padding-bottom: 10rem;
     color: #fff;
+    text-align: center;
   }
 }
 
@@ -26,7 +27,7 @@ nav {
 }
 
 header {
-  margin-bottom: 1.5rem;
+  margin-bottom: 5rem;
   background: cover;
   width: 100%;
   &.home-page-background {
@@ -122,6 +123,7 @@ footer {
   }
 }
 
+//Site logo styling
 .nic-logo {
   height: 35px;
   width: auto;
@@ -129,6 +131,14 @@ footer {
   margin-top: 1rem;
   margin-bottom: 1rem;
   padding-right: 1rem;
+}
+
+//lesson tile styling on lessons page
+.lesson-tile {
+  margin-bottom: 3rem;
+  &:hover {
+    background-color: #F1F1F1;
+  }
 }
 
 //place-holder box for "work" images
