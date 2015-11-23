@@ -148,7 +148,7 @@ footer {
   margin-bottom: 4rem;
 }
 
-.lesson-title {
+.copy-margin {
   margin-bottom: 1rem;
 }
 //place-holder box for "work" images
@@ -168,6 +168,11 @@ footer {
       z-index: 1;
     }
   }
+}
+
+//List indenting
+.list-indent {
+  padding-left: 0.75rem;
 }
 
 .box1 {

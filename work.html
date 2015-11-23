@@ -46,16 +46,58 @@
 <!-- Case Study section -->
 <section>
   <div class="row">
-    <div class="small-12 medium-8 large-6 medium-centered column">
+    <div class="panel small-12 large-8 medium-centered column">
       <h1>Case Study: Notable's Hotspot Menu</h1>
-      <p>To preface this case study: Notable is a design collaboration platform that features a prototyping tool</p>
+      <p>To preface this case study: Notable is a design collaboration platform that features a prototyping tool that uses images in conjunction with hotspots. We had been getting complaints from customers about usability issues and then finally our designers who were using the product internally would use outside prototyping tools instead of our own because it slowed them down. This is a story of how we solved the problem.</p>
     </div>
   </div>
   <hr>
   <div class="row">
-    <div class="small-12 medium-8 large-6 medium-centered column">
-      <h2></h2>
+    <div class="small-12 large-8 medium-centered column">
+      <h3><strong>Prototype Creation was Slow</strong></h3>
       <p>For this project, we had a one week time frame to conduct user testing, get feedback, sketch it out then work with an engineer to implement and push out the code. The goal was "simple", make Notable's prototyping tool faster. It was a wild ride, but we produced some pretty amazing results!</p>
+    </div>
+    <div class="small-12 large-8 medium-centered column">
+      <h3><strong>User Testing: Prototype Creation</strong></h3>
+      <p>Prototyping creation had five steps to get from nothing to a fully finished prototype. The results that followed from our user testing sessions were pretty telling. The majority of the designers couldn't actually finish the whole wizard within a 30 minute time frame.</p>
+      <h4><strong>Five Step Wizard:</strong></h4>
+      <img src="img/lessons/five-steps.png">
+      <ol class="list-indent">
+        <li>Upload Screen</li>
+        <li>Creation</li>
+        <li>Feedback Type</li>
+        <li>Open or Closed</li>
+        <li>Finalize and Name</li>
+      </ol>
+    </div>
+    <div class="small-12 large-8 medium-centered column">
+      <h3><strong>Reported/Observed Issues</strong></h3>
+      <ul class="list-indent">
+        <li>Pinned hotspots weren't selective, it was either all or nothing.</li>
+        <li>Preview function was slow and took forever to load, it also opened a new tab.</li>
+        <li>onHover effects weren't clickable, which was frustrating when making dropdown menus.</li>
+        <li>It was hard to find the correct screen when leafing through 50+ images. No  search or thumbnail previews available.</li>
+        <li>Assuming that the default interaction was onClick was confusing, "pin" was  mistaken as the onClick interaction by the testers.</li>
+        <li>It was impossible to create mid-page menus since an interaction would  load a new page and reset it to the top.</li>
+        <li>There was no quick way to "keep your place" while going through and making user flows.</li>
+      </ul>
+      <p><strong>We reasoned that finishing the actual creation within a reasonable amount of time would derive the most value.</strong> With our limited development availability, we decided to focus specifically on the hotspot menu.</p>
+    </div>
+    <div class="small-12 large-8 medium-centered column">
+      <h3><strong>Synthesized basic takeaways into sketches</strong></h3>
+      <p><strong>From there, we were going from sketches into the build phase.</strong> The styles were already existent, it was just a matter of getting the interface right. In these sketches we figured out some of the main interactions and mapped them out to discuss feasibility with the engineer before getting married to any features. Luckily, we were good to go!</p>
+      <ul class="small-block-grid-1 medium-block-grid-2 text-center">
+          <li><img src="img/solidify-sketches/hotspot-1.png">Sketch 1</li>
+          <li><img src="img/solidify-sketches/hotspot-2.png">Detail 1.1</li>
+          <li><img src="img/solidify-sketches/hotspot-3.png">Detail 1.2</li>
+          <li><img src="img/solidify-sketches/hotspot-4.png">Detail 1.3</li>
+      </ul>
+    </div>
+    <div class="small-12 large-8 medium-centered column">
+      <h3><strong>Wrap-up</strong></h3>
+      <p>Once we pushed the changes I pointed out above, the same designer who had initially timed the prototyping took another shot at it. He clocked in at parity with InVision, which was a huge win! Overall, the sprint was a success, so we relayed a video of the changes to our customers.</p>
+      <a href="https://zurb.wistia.com/medias/h2aj7mosxt"><img class="copy-margin" src="img/wistia-vid.jpg"></a>
+
     </div>
   </div>
 </section>
@@ -65,15 +107,15 @@
 <!-- lessons (Using Angular)-->
   <section>
     <div class="row">
-      <div class="small-12 medium-8 large-6 medium-centered column">
+      <div class="panel small-12 large-8 medium-centered column">
         <h1>ZURB University Lessons</h1>
         <p>I wrote posts that got sent out to over 14,000 people with a 33%+ open rate. I taught basic approaches to the design process and ways to improve baseline skills. This would in turn double daily traffic to the <a href="zurb.com/notable">Notable marketing site.</a> I also hand coded the emails, and did the graphics using Adobe Illustrator.</p>
       </div>
     </div>
     <hr>
     <div class="row" ng-controller="lessonController">
-      <div class="small-12 medium-6 large-4 column" ng-repeat="lessonItem in lessons">
-        <h3 class="lesson-title">{{lessonItem.title}}</h3>
+      <div class="small-12 large-8 medium-centered column" ng-repeat="lessonItem in lessons">
+        <h3 class="copy-margin">{{lessonItem.title}}</h3>
         <a ng-href="{{lessonItem.lessonLink}}" target="_blank"><img class="lesson-img" ng-src="{{lessonItem.lessonImage}}"></a>
         <p class="lesson-copy panel">{{lessonItem.shortDescription}}</p>
       </div>
