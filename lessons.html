@@ -52,13 +52,22 @@
       </div>
     </div>
     <hr>
-    <div class="row" ng-controller="lessonController">
-      <div class="small-12 medium-4 column" ng-repeat="lessonItem in lessons">
-        <h3 class="copy-margin">{{lessonItem.title}}</h3>
-        <a ng-href="{{lessonItem.lessonLink}}" target="_blank"><img class="lesson-img" ng-src="{{lessonItem.lessonImage}}"></a>
-        <p class="lesson-copy panel">{{lessonItem.shortDescription}}</p>
+    <div class="row">
+      <div class="small-12 large-8 medium-centered column">
+        <div class="row" ng-controller="lessonController">
+          <div class="small-12 column">
+            <ul class="small-block-grid-1 medium-block-grid-2">
+              <li ng-repeat="lessonItem in lessons">
+                <h3 class="copy-margin">{{lessonItem.title}}</h3>
+                <a ng-href="{{lessonItem.lessonLink}}" target="_blank"><img class="lesson-img" ng-src="{{lessonItem.lessonImage}}"></a>
+                <p class="lesson-copy panel">{{lessonItem.shortDescription}}</p>
+              </li>
+            </ul>  
+          </div>
+        </div>
       </div>
     </div>
+    
   </section>
 
 <!-- footer + navigation -->

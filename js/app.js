@@ -33,17 +33,18 @@ var lessons = [
     shortDescription: "We're going to focus on navigation this time around and the basics to make that nav help you give context to the rest of the sketch. Sketching navs consistently across multiple sketches makes it easier to convey your ideas and communicate your point to stakeholders."
   },
   {
-    title: "Get Your Ideas Rolling: Building Momentum Through Iteration",
-    lessonImage: "img/lessons/notable-lesson-iteration.png",
-    lessonLink: "www.qwerqwerqwer.com",
-    shortDescription: "Sketching is a great way to convey basic ideas when talking about page layouts of all sizes and natures. We all have ideas, but if we don't draw them consistently, it's really hard to show your vision. This is a 'how to' for sketching basic UI elements."
-  },
-  {
     title: "Creating a Believable User: The Quick Guide to Personas",
     lessonImage: "img/lessons/persona.png",
     lessonLink: "http://zurb.com/university/lessons/creating-a-believable-user-the-quick-guide-to-personas",
     shortDescription: "Personas aren't always necessary, but when we're trying to figure out different angles of attack when solving tough customer interactions, they help us take a look into what our potential users want and need. Check out this lesson to learn how to make some killer personas!"
+  },
+  {
+    title: "Get Your Ideas Rolling: Building Momentum Through Iteration",
+    lessonImage: "img/lessons/notable-lesson-iteration.png",
+    lessonLink: "https://zurb.com/expo/lessons/get-your-ideas-rolling-building-momentum-through-iteration",
+    shortDescription: "Sketching is a great way to convey basic ideas when talking about page layouts of all sizes and natures. We all have ideas, but if we don't draw them consistently, it's really hard to show your vision. This is a 'how to' for sketching basic UI elements."
   }
+  
   
 ];
 
