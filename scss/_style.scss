@@ -18,6 +18,13 @@ h2 {
   }
 }
 
+p {
+  &.home-section-description {
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+  }
+}
+
 nav {
   .name-of-site-author {
     line-height: 2.75;
@@ -28,7 +35,7 @@ nav {
 
 header {
   margin-bottom: 5rem;
-  background: cover;
+  background: contain;
   width: 100%;
   &.home-page-background {
     background: url(../img/artboard-1.jpg) no-repeat center 0 fixed;
@@ -123,25 +130,66 @@ footer {
   margin-bottom: 1rem;
 }
 //"work" images' style for hover effects
-.tile-image-lessons {
-  position: absolute;
-  z-index: auto;
+//Sets up the invisible overlay that shows on hover.
+.overlay {  
+  background:rgba(0,0,0,.75);
+  text-align:center;
+  padding-top: 30px;
+  padding-bottom: 50px;
   height: 100%;
-  width: auto;
+  opacity:0;
+  transition: opacity .25s ease-out;
 }
 
-.tile-overlay {
-  position: absolute;
-  z-index: 1;
-  height: 100%;
-  width: auto;
-  background-color: rgba(0,0,0,1.0);
+//sets up the overlay to have a hover effect that changes the opacity so you can see it
+.box:hover {
+  .overlay { 
+    opacity:1;
+  }
 }
-.overlay-copy {
-  position: absolute;
-  z-index: 2;
-  text-align: center;
-  background-color: #fff;
+
+//This is potential styling for the content you insert into the hover state overlay
+.hover-text {
+  font-family:Helvetica;
+  font-weight:900;
+  color:rgba(255,255,255,.85);
+  font-size:16px;
+  padding: 15px;
+}
+
+//"box" generates the binding parent element for the 
+//on-hover overlay as well as the background image. 
+//It uses the "contain" property to ensure that the background 
+//stays within the constraints of the parent element.
+.box {
+  height: 300px;
+  width: 300px;
+  background-position:50% 50%; 
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 3rem;
+  &.cases-tile {
+    background-image: url(../img/work/cases-tile.jpg);
+  }
+  &.lessons-tile {
+    background-image: url(../img/work/lessons-tile.jpg);
+  }
+  &.visuals-tile {
+    background-image: url(../img/work/visuals-tile.jpg);
+  }
+}
+
+//Button styling- "custom-button" to overwrite Foundation styles 
+//that are irrelevant to hover effect generation
+.custom-button {
+  border: 2px solid #fff;
+  border-radius: 10px;
+  height: 20px;
+  width: auto;
+  padding: 5px;
+  color: #fff !important;
 }
 
 // on hover states for bottom nav menu's icons
