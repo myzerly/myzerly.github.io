@@ -94,12 +94,61 @@ footer {
   }
 }
 
+//Site logo styling
+.nic-logo {
+  height: 35px;
+  width: auto;
+  float: left;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-right: 1rem;
+}
+
+//lesson tile styling on lessons page
+.lesson-img:hover {
+    background-color: #F1F1F1;
+    opacity: 0.85;
+  }
+
+.panel {
+  background-color: rgba(0,0,0,0.1);
+  border: none;
+}
+
+.lesson-copy {
+  margin-bottom: 4rem;
+}
+
+.copy-margin {
+  margin-bottom: 1rem;
+}
+//"work" images' style for hover effects
+.tile-image-lessons {
+  position: absolute;
+  z-index: auto;
+  height: 100%;
+  width: auto;
+}
+
+.tile-overlay {
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: auto;
+  background-color: rgba(0,0,0,1.0);
+}
+.overlay-copy {
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  background-color: #fff;
+}
+
+// on hover states for bottom nav menu's icons
 .menu-icon {
   height: 40px;
   width: auto;
 }
-
-// on hover states for bottom nav menu's icons
 .on-hover-footer-icon {
   height: 40px;
   width: auto;
@@ -120,54 +169,6 @@ footer {
     &.twitter {
       background: url(../img/nav-icons/svg/twitter-hover.svg);
     }
-  }
-}
-
-//Site logo styling
-.nic-logo {
-  height: 35px;
-  width: auto;
-  float: left;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  padding-right: 1rem;
-}
-
-//lesson tile styling on lessons page
-.lesson-img:hover {
-    background-color: #F1F1F1;
-    opacity: 0.85;
-  }
-
-.panel {
-  background-color: #F1F1F1;
-  border: none;
-}
-
-.lesson-copy {
-  margin-bottom: 4rem;
-}
-
-.copy-margin {
-  margin-bottom: 1rem;
-}
-//"work" images' style
-.home-tile-image {
-  margin-bottom: 1rem;
-  &:hover {
-    opacity: 0.85;
-  }
-}
-
-.tile-1 {
-  @media (min-width: 500px) {
-  float: right;
-  }
-}
-
-.tile-2 {
-  @media (min-width: 500px) {
-  float: left;
   }
 }
 
