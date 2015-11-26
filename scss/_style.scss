@@ -35,13 +35,12 @@ nav {
 
 header {
   margin-bottom: 5rem;
-  background: contain;
-  width: 100%;
+  background: cover;
   &.home-page-background {
     background: url(../img/artboard-1.jpg) no-repeat center 0 fixed;
   }
   &.work-page-background {
-    background: url(../img/case-studies.jpg) no-repeat center center fixed;
+    background: url(../img/case-studies.jpg) no-repeat center center;
   }
 }
 
@@ -150,11 +149,25 @@ footer {
 
 //This is potential styling for the content you insert into the hover state overlay
 .hover-text {
+  @media (min-width: 400px) {
+    font-size:16px;
+    padding: 2rem;
+    padding-bottom: 3rem;
+  }
+  @media (min-width: 645px) {
+    padding: 0.25rem;
+    padding-bottom: 1.5rem; 
+  }
+  @media (min-width: 945px) {
+    padding: 0.5rem;
+    padding-bottom: 2.5rem;
+  }
   font-family:Helvetica;
   font-weight:900;
   color:rgba(255,255,255,.85);
-  font-size:16px;
-  padding: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  list-style-type: none;
 }
 
 //"box" generates the binding parent element for the 
@@ -162,8 +175,19 @@ footer {
 //It uses the "contain" property to ensure that the background 
 //stays within the constraints of the parent element.
 .box {
-  height: 300px;
-  width: 300px;
+  @media (min-width: 400px) {
+    height: 300px;
+    width: 300px;
+  }
+  @media (min-width: 645px) {
+    height: 200px;
+    width: 200px;
+  }
+  @media (min-width: 945px) {
+    height: 250px;
+    width: 250px;
+  }
+  
   background-position:50% 50%; 
   background-repeat: no-repeat;
   background-size: contain;
