@@ -16,8 +16,8 @@
   </head>
 
   <body>
-  <!-- logo + top-nav for links -->
-  <nav class="top-page-navigation">
+<!-- logo + top-nav for links -->
+  <nav class="top-page-navigation hide-for-small">
     <div class="row">
     <div class="small-12 medium-6 column">
       <img class="nic-logo" src="img/nic-logo.svg">
@@ -34,18 +34,37 @@
     </div>
   </nav>
 
-  <!-- background image w/ intro text -->
+<!-- background image w/ intro text -->
   <header class="home-page-background">
+<!-- mobile nav hidden for medium and up screens -->
+    <nav class="hide-for-medium-up">
+      <div id="menuToggle">
+        <input type="checkbox" />
+        
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <ul id="menu">
+          <a href="index.html"><li>Home</li></a>
+          <a href="work.html"><li>Work</li></a>
+          <a href="about-me.html"><li>About</li></a>
+          <a href="img/nic-edwards-resume.pdf" target="_blank"><li>Resumé</li></a>
+          <a href="mailto:nic.edwrds@gmail.com?Subject=Hey!%20I%20Love%20Your%20Site!"><li>Contact</li></a>
+        </ul>
+      </div>
+    </nav>
+    
     <div class="row">
-      <div class="small-8 column small-centered">
-        <h1 class="header-title-page-copy">Hi. I’m Nic Edwards and I’m a designer in the Bay Area</h1>
+      <div class="small-12 medium-8 column medium-centered">
+        <h1 class="header-title-page-copy">Hi. I’m Nic Edwards and I’m a designer in the Bay Area.</h1>
       </div>
     </div>
   </header>
 
-  <!-- Work links - lessons and case study -->
+<!-- Work links - lessons and case study -->
   <section class="row show-work-tiles">
-    <div class="small-12 large-6 large-centered column">
+    <div class="small-12 medium-8 medium-centered column">
       <h2 class="text-center">Work</h2>
       <p class="home-section-description">Here's a sample of what I've been up to. It spans sketching, user testing, graphic design, teaching, customer outreach and fun design things in general. Recently, a lot of code!</p>
     </div>
@@ -92,7 +111,7 @@
     </div>
   </section>
 
-  <!-- footer + navigation -->
+<!-- footer + navigation -->
   <footer class="footer-navigation">
     <div class="row">
       <div class="small-12 column">

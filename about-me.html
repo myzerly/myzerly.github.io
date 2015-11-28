@@ -15,24 +15,64 @@
   </head>
 
 <body>
+  
+  <!-- background image w/ intro text -->
+  <header class="home-page-background">
+  <nav class="hide-for-medium-up">
+    <div id="menuToggle">
+      <input type="checkbox" />
+      
+      <span></span>
+      <span></span>
+      <span></span>
 
-<!-- About Me -->
-        <header class="hero">
-        <img class="myzerly-logo" src="img/clean-logo.svg">
-          <div id="top" class="row">
-            <div class="small-12 medium-8 small-centered column">
-              <h1 class="title-about-me">What's up? I'm Nic.</h1>
-              <p class="copy-about-me about-me-background"><a href="https://www.linkedin.com/pub/nic-edwards/36/a77/7a5/" target="_blank">I'm a product designer</a>, I worked on <a href="http://zurb.com/notable" target="_blank">Notable</a> and I love design. I build awesome products because I talk with customers to solve their problems.</p>
-            </div> 
-          </div>
-        </header>
-        <br>
+      <ul id="menu">
+        <a href="#"><li>Home</li></a>
+        <a href="#"><li>Work</li></a>
+        <a href="#"><li>About</li></a>
+        <a href="#"><li>Resumé</li></a>
+      </ul>
+    </div>
+  </nav>
+    <div class="row">
+      <div class="small-8 column small-centered">
+        <h1 class="header-title-page-copy">Hi. I’m Nic Edwards and I’m a designer in the Bay Area</h1>
+      </div>
+    </div>
+  </header>
 
-    <script src="//code.jquery.com/jquery.min.js"></script>
-    <script src="js/foundation.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
+  <!-- Work links - lessons and case study -->
+  <section class="row show-work-tiles">
+    <div class="small-12 large-6 large-centered column">
+      <h2 class="text-center">Work</h2>
+      <p class="home-section-description">Here's a sample of what I've been up to. It spans sketching, user testing, graphic design, teaching, customer outreach and fun design things in general. Recently, a lot of code!</p>
+    </div>
+
+  <!-- footer + navigation -->
+  <footer class="footer-navigation">
+    <div class="row">
+      <div class="small-12 column">
+        <ul class="footer-nav-menu">
+          <li><div class="on-hover-footer-icon linkedin"><a href="https://www.linkedin.com/pub/nic-edwards/36/a77/7a5/" target="_blank"><img class="menu-icon" src="img/nav-icons/svg/linkedin.svg"></a></div></li>
+          <li><div class="on-hover-footer-icon github"><a href="https://github.com/myzerly"><img class="menu-icon" src="img/nav-icons/svg/github.svg"></a></li>
+          <li><div class="on-hover-footer-icon twitter"><a href="https://twitter.com/myzerly" target="_blank"><img class="menu-icon" src="img/nav-icons/svg/twitter.svg"></a></li>
+          <li><div class="on-hover-footer-icon mail"><a href="mailto:nic.edwrds@gmail.com?Subject=Hey%20I%20saw%20your%20site!" target="_top"><img class="menu-icon" src="img/nav-icons/svg/mail.svg"></a></li>
+        </ul>
+      </div>
+      <div class="small-12 column text-center">
+        <p class="footer-copyright-text">© 2015 Nic Edwards. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/foundation.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
   </body>
 </html>
