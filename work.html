@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en" ng-app="portfolioSite">
+<html class="no-js" lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,18 +17,18 @@
 
   <body>
 <!-- logo + top-nav for links -->
-  <nav class="top-page-navigation">
+  <nav class="top-page-navigation hide-for-small">
     <div class="row">
-    <div class="small-6 column">
-      <a href="index.html"><img class="nic-logo" src="img/nic-logo.svg"></a>
+    <div class="small-12 medium-6 column">
+      <img class="nic-logo" src="img/nic-logo.svg">
       <span class="name-of-site-author">NIC EDWARDS</span>
     </div>
-    <div class="small-6 column">
+    <div class="small-12 medium-6 column">
       <ul class="top-nav-menu">
         <li><a href="work.html">Work</a></li>
         <li><a href="img/nic-edwards-resume.pdf" target="_blank">Resumé</a></li>
         <li><a href="about-me.html">About</a></li>
-        <li><a href="mailto:nic.edwrds@gmail.com?Subject=Hey%20I%20saw%20your%20site!" target="_top">Contact</a></li>
+        <li><a href="mailto:nic.edwrds@gmail.com?Subject=Hey!%20I%20Love%20Your%20Site!" target="_top">Contact</a></li>
       </ul>
     </div>
     </div>
@@ -36,88 +36,78 @@
 
 <!-- background image w/ intro text -->
   <header class="work-page-background">
+<!-- mobile nav hidden for medium and up screens -->
+    <nav class="hide-for-medium-up">
+      <div id="menuToggle">
+        <input type="checkbox" />
+        
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <ul id="menu">
+          <a href="index.html"><li>Home</li></a>
+          <a href="work.html"><li>Work</li></a>
+          <a href="about-me.html"><li>About</li></a>
+          <a href="img/nic-edwards-resume.pdf" target="_blank"><li>Resumé</li></a>
+          <a href="mailto:nic.edwrds@gmail.com?Subject=Hey!%20I%20Love%20Your%20Site!"><li>Contact</li></a>
+        </ul>
+      </div>
+    </nav>
+    
     <div class="row">
-      <div class="small-8 column small-centered">
-        <h1 class="header-title-page-copy">Lessons & Case Studies</h1>
+      <div class="small-12 medium-8 column medium-centered">
+        <h1 class="header-title-page-copy">Hi. I’m Nic Edwards and I’m a designer in the Bay Area.</h1>
       </div>
     </div>
   </header>
 
-<!-- Case Study section -->
-<section>
-  <div class="row">
-    <div class="panel small-12 large-8 medium-centered column">
-      <h1>Case Study: Notable's Hotspot Menu</h1>
-      <p>To preface this case study: Notable is a design collaboration platform that features a prototyping tool that uses images in conjunction with hotspots. We had been getting complaints from customers about usability issues and then finally our designers who were using the product internally would use outside prototyping tools instead of our own because it slowed them down. This is a story of how we solved the problem.</p>
+<!-- Work links - lessons and case study -->
+  <section class="row show-work-tiles">
+    <div class="small-12 medium-6 medium-centered column">
+      <h2 class="text-center">Work</h2>
+      <p class="home-section-description">Here's a sample of what I've been up to. It spans sketching, user testing, graphic design, teaching, customer outreach and fun design things in general. Recently, a lot of code!</p>
     </div>
-  </div>
-  <hr>
-  <div class="row">
-    <div class="small-12 large-8 medium-centered column">
-      <h3><strong>Prototype Creation was Slow</strong></h3>
-      <p>For this project, we had a one week time frame to conduct user testing, get feedback, sketch it out then work with an engineer to implement and push out the code. The goal was "simple", make Notable's prototyping tool faster. It was a wild ride, but we produced some pretty amazing results!</p>
-    </div>
-    <div class="small-12 large-8 medium-centered column">
-      <h3><strong>User Testing: Prototype Creation</strong></h3>
-      <p>Prototyping creation had five steps to get from nothing to a fully finished prototype. The results that followed from our user testing sessions were pretty telling. The majority of the designers couldn't actually finish the whole wizard within a 30 minute time frame.</p>
-      <h4><strong>Five Step Wizard:</strong></h4>
-      <img src="img/lessons/five-steps.png">
-      <ol class="list-indent">
-        <li>Upload Screen</li>
-        <li>Creation</li>
-        <li>Feedback Type</li>
-        <li>Open or Closed</li>
-        <li>Finalize and Name</li>
-      </ol>
-    </div>
-    <div class="small-12 large-8 medium-centered column">
-      <h3><strong>Reported/Observed Issues</strong></h3>
-      <ul class="list-indent">
-        <li>Pinned hotspots weren't selective, it was either all or nothing.</li>
-        <li>Preview function was slow and took forever to load, it also opened a new tab.</li>
-        <li>onHover effects weren't clickable, which was frustrating when making dropdown menus.</li>
-        <li>It was hard to find the correct screen when leafing through 50+ images. No  search or thumbnail previews available.</li>
-        <li>Assuming that the default interaction was onClick was confusing, "pin" was  mistaken as the onClick interaction by the testers.</li>
-        <li>It was impossible to create mid-page menus since an interaction would  load a new page and reset it to the top.</li>
-        <li>There was no quick way to "keep your place" while going through and making user flows.</li>
-      </ul>
-      <p><strong>We reasoned that finishing the actual creation within a reasonable amount of time would derive the most value.</strong> With our limited development availability, we decided to focus specifically on the hotspot menu.</p>
-    </div>
-    <div class="small-12 large-8 medium-centered column">
-      <h3><strong>Synthesized basic takeaways into sketches</strong></h3>
-      <p><strong>From there, we were going from sketches into the build phase.</strong> The styles were already existent, it was just a matter of getting the interface right. In these sketches we figured out some of the main interactions and mapped them out to discuss feasibility with the engineer before getting married to any features. Luckily, we were good to go!</p>
-      <ul class="small-block-grid-1 medium-block-grid-2 text-center">
-          <li><img src="img/solidify-sketches/hotspot-1.png">Sketch 1</li>
-          <li><img src="img/solidify-sketches/hotspot-2.png">Detail 1.1</li>
-          <li><img src="img/solidify-sketches/hotspot-3.png">Detail 1.2</li>
-          <li><img src="img/solidify-sketches/hotspot-4.png">Detail 1.3</li>
-      </ul>
-    </div>
-    <div class="small-12 large-8 medium-centered column">
-      <h3><strong>Wrap-up</strong></h3>
-      <p>Once we pushed the changes I pointed out above, the same designer who had initially timed the prototyping took another shot at it. He clocked in at parity with InVision, which was a huge win! Overall, the sprint was a success, so we relayed a video of the changes to our customers.</p>
-      <a href="https://zurb.wistia.com/medias/h2aj7mosxt"><img class="copy-margin" src="img/wistia-vid.jpg"></a>
-
-    </div>
-  </div>
-</section>
-
-
-
-<!-- lessons (Using Angular)-->
-  <section>
-    <div class="row">
-      <div class="panel small-12 large-8 medium-centered column">
-        <h1>ZURB University Lessons</h1>
-        <p>I wrote posts that got sent out to over 14,000 people with a 33%+ open rate. I taught basic approaches to the design process and ways to improve baseline skills. This would in turn double daily traffic to the <a href="zurb.com/notable">Notable marketing site.</a> I also hand coded the emails, and did the graphics using Adobe Illustrator.</p>
-      </div>
-    </div>
-    <hr>
-    <div class="row" ng-controller="lessonController">
-      <div class="small-12 large-8 medium-centered column" ng-repeat="lessonItem in lessons">
-        <h3 class="copy-margin">{{lessonItem.title}}</h3>
-        <a ng-href="{{lessonItem.lessonLink}}" target="_blank"><img class="lesson-img" ng-src="{{lessonItem.lessonImage}}"></a>
-        <p class="lesson-copy panel">{{lessonItem.shortDescription}}</p>
+<!-- Block-grid tiles for cards -->
+    <div class="small-12 column large-10 large-centered column">
+      <ul class="small-block-grid-1 medium-block-grid-3">
+        <li>
+          <div class="box lessons-tile">
+            <div class="overlay">
+              <ul class="hover-text">
+                <li>Copywriting</li>
+                <li>Ideation</li>
+                <li>Code</li>
+              </ul>
+              <a class="custom-button" href="http://myzerly.com" target="_blank">View More</a>
+            </div>
+            <p class="panel">words</p>
+          </div>
+        </li>
+        <li>
+          <div class="box cases-tile">
+            <div class="overlay">
+              <ul class="hover-text">
+                <li>Sketching</li>
+                <li>User Testing</li>
+                <li>Wireframing</li>
+              </ul>
+              <a class="custom-button" href="http://myzerly.com" target="_blank">View More</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="box visuals-tile">
+            <div class="overlay">
+              <ul class="hover-text">
+                <li>illustrator</li>
+                <li>Photoshop</li>
+                <li>Sketch</li>
+              </ul>
+              <a class="custom-button" href="http://myzerly.com" target="_blank">View More</a>
+            </div>
+          </div> 
+        </li> 
       </div>
     </div>
   </section>
@@ -128,7 +118,7 @@
       <div class="small-12 column">
         <ul class="footer-nav-menu">
           <li><div class="on-hover-footer-icon linkedin"><a href="https://www.linkedin.com/pub/nic-edwards/36/a77/7a5/" target="_blank"><img class="menu-icon" src="img/nav-icons/svg/linkedin.svg"></a></div></li>
-          <li><div class="on-hover-footer-icon github"><a href="#"><img class="menu-icon" src="img/nav-icons/svg/github.svg"></a></li>
+          <li><div class="on-hover-footer-icon github"><a href="https://github.com/myzerly"><img class="menu-icon" src="img/nav-icons/svg/github.svg"></a></li>
           <li><div class="on-hover-footer-icon twitter"><a href="https://twitter.com/myzerly" target="_blank"><img class="menu-icon" src="img/nav-icons/svg/twitter.svg"></a></li>
           <li><div class="on-hover-footer-icon mail"><a href="mailto:nic.edwrds@gmail.com?Subject=Hey%20I%20saw%20your%20site!" target="_top"><img class="menu-icon" src="img/nav-icons/svg/mail.svg"></a></li>
         </ul>
@@ -141,6 +131,7 @@
 
   <script src="//code.jquery.com/jquery.min.js"></script>
   <script src="bower_components/angular/angular.min.js"></script>
+  <script src="js/app.js"></script>
   <script src="js/foundation.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/app.js"></script>

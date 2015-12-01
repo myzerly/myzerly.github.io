@@ -1,5 +1,7 @@
 h1, h2, h3, h4, h5, h6, body, span, p {
   font-family: 'Roboto', serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
@@ -59,7 +61,7 @@ footer {
     color: #fff;
     margin-top: 3rem;
   }
-}
+} 
 
 .footer-copyright-text {
   font-size: 0.75rem;
