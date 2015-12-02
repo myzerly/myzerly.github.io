@@ -225,6 +225,10 @@ footer {
   padding-left: 10px;
   padding-right: 10px;
   color: #fff !important;
+  &.work-tiles {
+    position: relative;
+    top: 80%;
+  }
 }
 
 // on hover states for bottom nav menu's icons

@@ -7,6 +7,11 @@ app.controller('lessonController', function($scope){
   $scope.lessons = lessons;
 });
 
+//Data for the work populating using ng-repeat
+app.controller('workController', function($scope){
+  $scope.work = work;
+});
+
 var lessons = [
   {
     title: "Sketched Out: A Guide for Consistent Sketches",
@@ -48,16 +53,26 @@ var lessons = [
   
 ];
 
-//Data for the work populating using ng-repeat
-app.controller('workController', function($scope){
-  $scope.work = work;
-});
-
 var work = [
   {
-
+    imageTile: "lessons-tile",
+    buttonCopy: "Stuff",
+    tileTitle: "Things on Things"
+  },
+  {
+    imageTile: "lessons-tile",
+    buttonCopy: "Stuff"
+  },
+  {
+    imageTile: "lessons-tile",
+    buttonCopy: "Stuff"
+  },
+  {
+    imageTile: "lessons-tile",
+    buttonCopy: "Stuff"
   }
-]
+
+];
 
 
 })();
