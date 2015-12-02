@@ -55,21 +55,40 @@ var lessons = [
 
 var work = [
   {
-    imageTile: "lessons-tile",
-    buttonCopy: "Stuff",
-    tileTitle: "Things on Things"
+    imageTile: "tile-navigation",
+    buttonCopy: "Read More",
+    tileTitle: "Things on Things",
+    lessonLink: "#"
   },
   {
-    imageTile: "lessons-tile",
-    buttonCopy: "Stuff"
+    imageTile: "tile-persona",
+    buttonCopy: "Read More",
+    tileTitle: "Things on Things",
+    lessonLink: "#"
   },
   {
-    imageTile: "lessons-tile",
-    buttonCopy: "Stuff"
+    imageTile: "tile-redo-momentum",
+    buttonCopy: "Read More",
+    tileTitle: "Things on Things",
+    lessonLink: "#"
   },
   {
-    imageTile: "lessons-tile",
-    buttonCopy: "Stuff"
+    imageTile: "tile-sketching",
+    buttonCopy: "Read More",
+    tileTitle: "Things on Things",
+    lessonLink: "#"
+  },
+  {
+    imageTile: "tile-testing",
+    buttonCopy: "Read More",
+    tileTitle: "Things on Things",
+    lessonLink: "#"
+  },
+  {
+    imageTile: "tile-timeboxing",
+    buttonCopy: "Read More",
+    tileTitle: "Things on Things",
+    lessonLink: "#"
   }
 
 ];

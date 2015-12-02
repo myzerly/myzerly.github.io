@@ -211,8 +211,23 @@ footer {
   &.visuals-tile {
     background-image: url(../img/work/visuals-tile.jpg);
   }
-  &.shame-tile {
-    background-image: url(../img/lessons/timebox.png);
+  &.tile-navigation {
+    background-image: url(../img/tile-navigation.png);
+  }
+  &.tile-persona {
+    background-image: url(../img/tile-persona.png);
+  }
+  &.tile-sketching {
+    background-image: url(../img/tile-sketching.png);
+  }
+  &.tile-testing {
+    background-image: url(../img/tile-testing.png);
+  }
+  &.tile-timeboxing {
+    background-image: url(../img/tile-timeboxing.png);
+  }
+  &.tile-redo-momentum {
+    background-image: url(../img/tile-redo-momentum.png);
   }
 }
 

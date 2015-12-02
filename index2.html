@@ -73,13 +73,13 @@
           <li ng-repeat="workItem in work">
             <div class="box {{workItem.imageTile}}">
               <div class="overlay">
-                <a class="custom-button work-tiles" href="http://myzerly.com" target="_blank">{{workItem.buttonCopy}}</a>
+                <h3 class="text-center hover-text">{{workItem.tileTitle}}</h3>
+                <a class="custom-button work-tiles" href="{{lessonLink}}" target="_blank">{{workItem.buttonCopy}}</a>
               </div>
             </div>
-            <h4 class="panel text-center">{{workItem.tileTitle}}</h4>
           </li>
-        </ul>  
-      </div>
+        </ul>
+      </div>  
     </div>
   </section>
 
