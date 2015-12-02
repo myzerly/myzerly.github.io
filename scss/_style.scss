@@ -46,7 +46,7 @@ header {
     background: url(../img/artboard-1.jpg) no-repeat center 0 fixed;
   }
   &.work-page-background {
-    background: url(../img/case-studies.jpg) no-repeat center centerlohlh;
+    background: url(../img/case-studies.jpg) no-repeat center center;
   }
 }
 
@@ -210,6 +210,9 @@ footer {
   }
   &.visuals-tile {
     background-image: url(../img/work/visuals-tile.jpg);
+  }
+  &.shame-tile {
+    background-image: url(../img/lessons/timebox.png);
   }
 }
 

@@ -48,23 +48,16 @@ var lessons = [
   
 ];
 
-// Pre-written inputs for other lessons
-  //{
-  //   title: "",
-  //   lessonImage: "",
-  //   lessonLink: "",
-  //   shortDescription: ""
-  // }
+//Data for the work populating using ng-repeat
+app.controller('workController', function($scope){
+  $scope.work = work;
+});
 
-//About me page 'overheard' from linkedin recommendations
-// app.controller('lessonController', function($scope){
-//     $scope.recommendations = recommendations;
-// 	});
+var work = [
+  {
 
-// var recommendations = [
-//   {}
-//   ]
-
+  }
+]
 
 
 })();

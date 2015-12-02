@@ -57,57 +57,26 @@
     
     <div class="row">
       <div class="small-12 medium-8 column medium-centered">
-        <h1 class="header-title-page-copy">Hi. I’m Nic Edwards and I’m a designer in the Bay Area.</h1>
+        <h1 class="header-title-page-copy">Visuals, Lessons and Case Studies</h1>
       </div>
     </div>
   </header>
 
-<!-- Work links - lessons and case study -->
+<!-- Work links - lessons and case study workItem.<<var>> -->
   <section class="row show-work-tiles">
-    <div class="small-12 medium-6 medium-centered column">
-      <h2 class="text-center">Work</h2>
-      <p class="home-section-description">Here's a sample of what I've been up to. It spans sketching, user testing, graphic design, teaching, customer outreach and fun design things in general. Recently, a lot of code!</p>
-    </div>
-<!-- Block-grid tiles for cards -->
-    <div class="small-12 column large-10 large-centered column">
-      <ul class="small-block-grid-1 medium-block-grid-3">
-        <li>
-          <div class="box lessons-tile">
-            <div class="overlay">
-              <ul class="hover-text">
-                <li>Copywriting</li>
-                <li>Ideation</li>
-                <li>Code</li>
-              </ul>
-              <a class="custom-button" href="http://myzerly.com" target="_blank">View More</a>
-            </div>
-            <p class="panel">words</p>
+    <div class="row">
+      <div class="small-12 large-8 medium-centered column">
+        <div class="row" ng-controller="workController">
+          <div class="small-12 column">
+            <ul class="small-block-grid-1 medium-block-grid-2">
+              <li ng-repeat="workItem in lessons">
+                <h3 class="copy-margin">{{workItem.title}}</h3>
+                <a ng-href="{{lessonItem.lessonLink}}" target="_blank"><img class="lesson-img" ng-src="{{lessonItem.lessonImage}}"></a>
+                <p class="lesson-copy panel">{{lessonItem.shortDescription}}</p>
+              </li>
+            </ul>  
           </div>
-        </li>
-        <li>
-          <div class="box cases-tile">
-            <div class="overlay">
-              <ul class="hover-text">
-                <li>Sketching</li>
-                <li>User Testing</li>
-                <li>Wireframing</li>
-              </ul>
-              <a class="custom-button" href="http://myzerly.com" target="_blank">View More</a>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="box visuals-tile">
-            <div class="overlay">
-              <ul class="hover-text">
-                <li>illustrator</li>
-                <li>Photoshop</li>
-                <li>Sketch</li>
-              </ul>
-              <a class="custom-button" href="http://myzerly.com" target="_blank">View More</a>
-            </div>
-          </div> 
-        </li> 
+        </div>
       </div>
     </div>
   </section>
