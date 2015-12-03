@@ -95,7 +95,21 @@
             </div>
           </li>
         </ul>
-      </div>      
+      </div>
+      <div class="row" ng-controller="casesController">
+      <h3 class="text-center">Case Study</h3>
+      <hr>
+        <ul class="small-block-grid-1 medium-block-grid-3">
+          <li ng-repeat="caseItem in cases">
+            <div class="box {{caseItem.imageTile}}">
+              <div class="overlay">
+                <h3 class="text-center hover-text work-tiles">{{caseItem.tileTitle}}</h3>
+                <a class="custom-button" href="{{casesLink}}" target="_blank">{{caseItem.buttonCopy}}</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>          
     </div>
   </section>
 

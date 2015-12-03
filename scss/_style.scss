@@ -227,6 +227,9 @@ footer {
   &.tile-athletigen {
     background-image: url(../img/tile-athletigen.png)
   }
+  &.tile-equinix {
+    background-image: url(../img/tile-equinix.png)
+  }
   &.tile-prototype {
     background-image: url(../img/tile-prototype.png)
   }
@@ -241,11 +244,6 @@ footer {
   padding-left: 15px;
   padding-right: 15px;
   color: #fff !important;
-  &:hover {
-    background-color: #fff;
-    color: #000;
-    opacity: 0.25;
-  }
 }
 
 // on hover states for bottom nav menu's icons

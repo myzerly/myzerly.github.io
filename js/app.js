@@ -101,8 +101,14 @@ var work = [
 var visuals = [
   {
     imageTile: "tile-athletigen",
-    buttonCopy: "Read More",
+    buttonCopy: "See More",
     tileTitle: "Visual Direction: Athletigen",
+    lessonLink: "#"
+  },
+  {
+    imageTile: "tile-equinix",
+    buttonCopy: "See More",
+    tileTitle: "Visual Direction: Equinix",
     lessonLink: "#"
   }
 ]
