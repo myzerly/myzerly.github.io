@@ -12,6 +12,11 @@ app.controller('workController', function($scope){
   $scope.work = work;
 });
 
+//Data for the work populating using ng-repeat
+app.controller('visualsController', function($scope){
+  $scope.visuals = visuals;
+});
+
 var lessons = [
   {
     title: "Sketched Out: A Guide for Consistent Sketches",
@@ -57,41 +62,50 @@ var work = [
   {
     imageTile: "tile-navigation",
     buttonCopy: "Read More",
-    tileTitle: "Things on Things",
+    tileTitle: "Sketching Navigational Components",
     lessonLink: "#"
   },
   {
     imageTile: "tile-persona",
     buttonCopy: "Read More",
-    tileTitle: "Things on Things",
+    tileTitle: "Creating Believable Personas",
     lessonLink: "#"
   },
   {
     imageTile: "tile-redo-momentum",
     buttonCopy: "Read More",
-    tileTitle: "Things on Things",
+    tileTitle: "Building Momentum Through Iteration",
     lessonLink: "#"
   },
   {
     imageTile: "tile-sketching",
     buttonCopy: "Read More",
-    tileTitle: "Things on Things",
+    tileTitle: "A Guide to Consisten Sketches",
     lessonLink: "#"
   },
   {
     imageTile: "tile-testing",
     buttonCopy: "Read More",
-    tileTitle: "Things on Things",
+    tileTitle: "The How-to for User Testing",
     lessonLink: "#"
   },
   {
     imageTile: "tile-timeboxing",
     buttonCopy: "Read More",
-    tileTitle: "Things on Things",
+    tileTitle: "Methods for Effective Timeboxing",
     lessonLink: "#"
   }
 
 ];
+
+var visuals = [
+  {
+    imageTile: "tile-athletigen",
+    buttonCopy: "Read More",
+    tileTitle: "Visual Direction: Athletigen",
+    lessonLink: "#"
+  }
+]
 
 
 })();

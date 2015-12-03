@@ -40,7 +40,7 @@ nav {
 }
 
 header {
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   background: cover;
   &.home-page-background {
     background: url(../img/artboard-1.jpg) no-repeat center 0 fixed;
@@ -175,6 +175,9 @@ footer {
   margin-right: auto;
   margin-left: auto;
   list-style-type: none;
+  &.work-tiles {
+    margin-bottom: 1.5rem;
+  }
 }
 
 //"box" generates the binding parent element for the 
@@ -191,8 +194,8 @@ footer {
     width: 200px;
   }
   @media (min-width: 945px) {
-    height: 250px;
-    width: 250px;
+    height: 275px;
+    width: 275px;
   }
   
   background-position:50% 50%; 
@@ -201,16 +204,8 @@ footer {
   border-radius: 2px;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 3rem;
-  &.cases-tile {
-    background-image: url(../img/work/cases-tile.jpg);
-  }
-  &.lessons-tile {
-    background-image: url(../img/work/lessons-tile.jpg);
-  }
-  &.visuals-tile {
-    background-image: url(../img/work/visuals-tile.jpg);
-  }
+  margin-bottom: 2rem;
+
   &.tile-navigation {
     background-image: url(../img/tile-navigation.png);
   }
@@ -229,6 +224,12 @@ footer {
   &.tile-redo-momentum {
     background-image: url(../img/tile-redo-momentum.png);
   }
+  &.tile-athletigen {
+    background-image: url(../img/tile-athletigen.png)
+  }
+  &.tile-prototype {
+    background-image: url(../img/tile-prototype.png)
+  }
 }
 
 //Button styling- "custom-button" to overwrite Foundation styles
@@ -236,13 +237,14 @@ footer {
   border: 1px solid #fff;
   border-radius: 2px;
   width: auto;
-  padding: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
   color: #fff !important;
-  &.work-tiles {
-    position: relative;
-    top: 80%;
+  &:hover {
+    background-color: #fff;
+    color: #000;
+    opacity: 0.25;
   }
 }
 
