@@ -17,6 +17,11 @@ app.controller('visualsController', function($scope){
   $scope.visuals = visuals;
 });
 
+//Data for the work populating using ng-repeat
+app.controller('casesController', function($scope){
+  $scope.cases = cases;
+});
+
 var lessons = [
   {
     title: "Sketched Out: A Guide for Consistent Sketches",
@@ -111,7 +116,16 @@ var visuals = [
     tileTitle: "Visual Direction: Equinix",
     lessonLink: "#"
   }
-]
+];
+
+var cases = [
+  {
+    imageTile: "tile-prototype",
+    buttonCopy: "See More",
+    tileTitle: "Case Study: Notable Prototypes",
+    lessonLink: "#"
+  }
+];
 
 
 })();
