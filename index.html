@@ -64,7 +64,7 @@
   <section class="row show-work-tiles">
     <div class="small-12 medium-6 medium-centered column">
       <h2 class="text-center">Recent Work</h2>
-      <p class="home-section-description">Here's a sample of what I've been up to. It spans sketching, user testing, graphic design, teaching, customer outreach and fun design things in general. Recently, a lot of code!</p> 
+      <p class="home-section-description">Here's a sample of what I've been up to. It spans sketching, user testing, graphic design, teaching, customer outreach and fun design things in general, and recently, a lot of code!</p> 
     </div>
 <!-- Block-grid tiles for cards -->
     <div class="small-12 large-10 medium-centered column">
@@ -76,7 +76,7 @@
             <div class="box {{workItem.imageTile}}">
               <div class="overlay">
                 <h3 class="text-center hover-text work-tiles">{{workItem.tileTitle}}</h3>
-                <a class="custom-button" href="{{lessonLink}}" target="_blank">{{workItem.buttonCopy}}</a>
+                <a class="custom-button" href="{{workItem.lessonLink}}" target="_blank">{{workItem.buttonCopy}}</a>
               </div>
             </div>
           </li>
@@ -90,7 +90,7 @@
             <div class="box {{visualItem.imageTile}}">
               <div class="overlay">
                 <h3 class="text-center hover-text work-tiles">{{visualItem.tileTitle}}</h3>
-                <a class="custom-button" href="{{visualLink}}" target="_blank">{{visualItem.buttonCopy}}</a>
+                <a class="custom-button" href="{{visualItem.visualLink}}">{{visualItem.buttonCopy}}</a>
               </div>
             </div>
           </li>
@@ -104,7 +104,7 @@
             <div class="box {{caseItem.imageTile}}">
               <div class="overlay">
                 <h3 class="text-center hover-text work-tiles">{{caseItem.tileTitle}}</h3>
-                <a class="custom-button" href="{{casesLink}}" target="_blank">{{caseItem.buttonCopy}}</a>
+                <a class="custom-button" href="{{caseItem.caseLink}}">{{caseItem.buttonCopy}}</a>
               </div>
             </div>
           </li>
