@@ -255,6 +255,10 @@ footer {
   padding-left: 15px;
   padding-right: 15px;
   color: #fff !important;
+  &.black {
+    color: #000 !important;
+    border-color: #000;
+  }
 }
 
 // on hover states for bottom nav menu's icons
@@ -289,6 +293,11 @@ footer {
 //List indenting
 .list-indent {
   padding-left: 0.75rem;
+}
+
+//visuals margin for collapse
+img.visuals-margin {
+  margin-bottom: 2rem;
 }
 
 //mobile nav hamburger menu test

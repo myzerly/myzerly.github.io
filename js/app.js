@@ -69,7 +69,7 @@ var visuals = [
     imageTile: "tile-equinix",
     buttonCopy: "See More",
     tileTitle: "Visual Direction: Equinix",
-    visualLink: "#"
+    visualLink: "equinix.html"
   }
 ];
 
