@@ -265,6 +265,7 @@ footer {
 .menu-icon {
   height: 40px;
   width: auto;
+  background: contain;
 }
 .on-hover-footer-icon {
   height: 40px;
@@ -293,6 +294,8 @@ footer {
 //List indenting
 .list-indent {
   padding-left: 0.75rem;
+  list-style-type: none;
+  text-decoration: none;
 }
 
 //visuals margin for collapse
