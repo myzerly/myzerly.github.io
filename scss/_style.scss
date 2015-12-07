@@ -34,15 +34,19 @@ p {
   }
 }
 
+a{
+  color: #000;
+  &:hover {
+    text-decoration: none;
+    color: #5D5C5C;
+  }
+}
+
 nav {
   .name-of-site-author {
     line-height: 2.75;
     font-size: 1.5rem;
     font-weight: 900;
-    color: #000;
-  }
-  &a:hover {
-    text-decoration: none;
     color: #000;
   }
 }
@@ -55,6 +59,9 @@ header {
   }
   &.work-page-background {
     background: url(../img/case-studies.jpg) no-repeat center center;
+    background-position:50% 50%; 
+  background-repeat: no-repeat;
+  background-size: contain;
   }
 
 }
@@ -182,7 +189,7 @@ footer {
   }
   font-family:Helvetica;
   font-weight:900;
-  color:rgba(255,255,255,.85);
+  color:rgba(255,255,255,0.85);
   margin-right: auto;
   margin-left: auto;
   list-style-type: none;
@@ -255,9 +262,13 @@ footer {
   padding-left: 15px;
   padding-right: 15px;
   color: #fff !important;
+  background-color: rgba(0,0,0,0.0);
   &.black {
     color: #000 !important;
     border-color: #000;
+    &:hover {
+      background-color: rgba(0,0,0,0.1);
+    }
   }
 }
 
@@ -303,7 +314,12 @@ img.visuals-margin {
   margin-bottom: 2rem;
 }
 
-//mobile nav hamburger menu test
+input {
+  box-shadow: inset 0 0px 0px #fff !important;
+  border-color: #000 !important;
+}
+
+//mobile nav hamburger menu code -- Need to figure out how to position it to the right of the page and have it slide in from that side as well.
 #menuToggle
 {
   display: block;
