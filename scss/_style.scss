@@ -1,5 +1,7 @@
 h1, h2, h3, h4, h5, h6, body, span, p {
   font-family: 'Roboto', serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
@@ -7,6 +9,12 @@ h1 {
     padding-top: 10rem;
     padding-bottom: 10rem;
     color: #fff;
+    text-align: center;
+  }
+  &.header-sub-title-page-copy {
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    color: #000;
     text-align: center;
   }
 }
@@ -18,25 +26,51 @@ h2 {
   }
 }
 
+p {
+  &.home-section-description {
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+    font-size: 1.25rem;
+  }
+}
+
+a{
+  color: #000;
+  &:hover {
+    text-decoration: none;
+    color: #5D5C5C;
+  }
+}
+
 nav {
   .name-of-site-author {
     line-height: 2.75;
     font-size: 1.5rem;
     font-weight: 900;
+    color: #000;
   }
 }
 
 header {
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   background: cover;
-  width: 100%;
   &.home-page-background {
     background: url(../img/artboard-1.jpg) no-repeat center 0 fixed;
   }
   &.work-page-background {
-    background: url(../img/case-studies.jpg) no-repeat center center fixed;
+    background: url(../img/case-study.jpg) no-repeat 0 0 fixed;
   }
+  &.about-page-background {
+    background: url(../img/case-study.jpg) no-repeat 0 center fixed;
+  }
+
 }
+
+.about-me-pic {
+  max-width: 200px;
+  height: auto;
+  border-radius: 50%;
+  } 
 
 .show-work-tiles {
     margin-bottom: 5rem;
@@ -49,7 +83,7 @@ footer {
     color: #fff;
     margin-top: 3rem;
   }
-}
+} 
 
 .footer-copyright-text {
   font-size: 0.75rem;
@@ -66,9 +100,11 @@ footer {
   float: right;
   a {
     color: #000;
+    border-bottom: 2px solid transparent;
+    transition: border 0.25s ease-in-out;
   }
   a:hover {
-    color: #a2a2a2; 
+    border-bottom: 2px solid #000; 
   }
   li {
     padding-right: 1.25rem;
@@ -94,15 +130,172 @@ footer {
   }
 }
 
-.menu-icon {
-  height: 40px;
+//Site logo styling
+.nic-logo {
+  height: 35px;
   width: auto;
+  float: left;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-right: 1rem;
+}
+
+//lesson tile styling on lessons page
+.lesson-img:hover {
+    background-color: #F1F1F1;
+    opacity: 0.85;
+  }
+
+.panel {
+  background-color: rgba(0,0,0,0.1);
+  border: none;
+}
+
+.lesson-copy {
+  margin-bottom: 4rem;
+}
+
+.copy-margin {
+  margin-bottom: 1rem;
+}
+//"work" images' style for hover effects
+//Sets up the invisible overlay that shows on hover.
+.overlay {  
+  background:rgba(0,0,0,.75);
+  border-radius: 2px;
+  text-align:center;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  height: 100%;
+  opacity:0;
+  transition: opacity .25s ease-out;
+}
+
+//sets up the overlay to have a hover effect that changes the opacity so you can see it
+.box:hover {
+  .overlay { 
+    opacity:1;
+  }
+}
+
+//This is potential styling for the content you insert into the hover state overlay
+.hover-text {
+  @media (min-width: 400px) {
+    font-size:16px;
+    padding: 2rem;
+    padding-bottom: 3rem;
+  }
+  @media (min-width: 645px) {
+    padding: 0.25rem;
+    padding-bottom: 1.5rem; 
+  }
+  @media (min-width: 945px) {
+    padding: 0.5rem;
+    padding-bottom: 2.5rem;
+  }
+  font-family:Helvetica;
+  font-weight:900;
+  color:rgba(255,255,255,0.85);
+  margin-right: auto;
+  margin-left: auto;
+  list-style-type: none;
+  &.work-tiles {
+    margin-bottom: 1.5rem;
+  }
+}
+
+//"box" generates the binding parent element for the 
+//on-hover overlay as well as the background image. 
+//It uses the "contain" property to ensure that the background 
+//stays within the constraints of the parent element.
+.box {
+  @media (min-width: 400px) {
+    height: 300px;
+    width: 300px;
+  }
+  @media (min-width: 645px) {
+    height: 200px;
+    width: 200px;
+  }
+  @media (min-width: 945px) {
+    height: 275px;
+    width: 275px;
+  }
+  
+  background-position:50% 50%; 
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 2px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 2rem;
+
+  &.tile-navigation {
+    background-image: url(../img/tile-navigation.png);
+  }
+  &.tile-persona {
+    background-image: url(../img/tile-persona.png);
+  }
+  &.tile-sketching {
+    background-image: url(../img/tile-sketching.png);
+  }
+  &.tile-testing {
+    background-image: url(../img/tile-testing.png);
+  }
+  &.tile-timeboxing {
+    background-image: url(../img/tile-timeboxing.png);
+  }
+  &.tile-redo-momentum {
+    background-image: url(../img/tile-redo-momentum.png);
+  }
+  &.tile-athletigen {
+    background-image: url(../img/tile-athletigen.png)
+  }
+  &.tile-equinix {
+    background-image: url(../img/tile-equinix.png)
+  }
+  &.tile-prototype {
+    background-image: url(../img/tile-prototype.png)
+  }
+}
+
+//Button styling- "custom-button" to overwrite Foundation styles
+.custom-button {
+  border: 1px solid #fff;
+  border-radius: 2px;
+  width: auto;
+  padding: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #fff !important;
+  background-color: rgba(0,0,0,0.0);
+  transition: background .5s ease;
+  transition: color .25s ease;
+  &:hover {
+    background-color: rgba(255,255,255,0.1);
+    
+  }
+  &.black {
+    color: #000 !important;
+    border-color: #000;
+    &:hover {
+      // background-color: rgba(235,236,238,0.5);
+      background-color: #000;
+      color: #fff !important;
+    }
+  }
 }
 
 // on hover states for bottom nav menu's icons
+.menu-icon {
+  height: 40px;
+  width: auto;
+  background: contain;
+}
 .on-hover-footer-icon {
   height: 40px;
   width: auto;
+  transition: opacity 0.25s ease-in-out;
   &:hover {
     background-size: 40px auto;
     .menu-icon {
@@ -123,64 +316,149 @@ footer {
   }
 }
 
-//Site logo styling
-.nic-logo {
-  height: 35px;
-  width: auto;
-  float: left;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  padding-right: 1rem;
+//List indenting
+.list-indent {
+  padding-left: 0.75rem;
+  list-style-type: none;
+  text-decoration: none;
 }
 
-//lesson tile styling on lessons page
-.lesson-img:hover {
-    background-color: #F1F1F1;
-    opacity: 0.85;
-  }
-
-.panel {
-  background-color: #F1F1F1;
-  border: none;
-}
-
-.lesson-copy {
-  margin-bottom: 4rem;
-}
-
-.lesson-title {
-  margin-bottom: 1rem;
-}
-//place-holder box for "work" images
-.box {
-  height: 300px;
-  width: 300px;
-  background-color: #000;
-  color: #fff;
+//visuals margin for collapse
+img.visuals-margin {
   margin-bottom: 2rem;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  &:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-    &:after {
-      content: "this is stuff";
-      z-index: 1;
-    }
-  }
 }
 
-.box1 {
-  @media (min-width: 500px) {
-  float: right;
-  }
+input {
+  box-shadow: inset 0 0px 0px #fff !important;
+  border-color: #000 !important;
 }
 
-.box2 {
-  @media (min-width: 500px) {
-  float: left;
-  }
+//mobile nav hamburger menu code -- Need to figure out how to position it to the right of the page and have it slide in from that side as well.
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
 }
+
+#menuToggle input
+{
+  display: block;
+  width: 33px;
+  height: 28px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #EBECEE;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #000;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  opacity: 1;
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 100%;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #fff;
+  list-style-type: none;
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's fade it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: scale(1.0, 1.0);
+  opacity: 1;
+}
+
 
 // Checks which media querie you've loaded         
 // @media (min-width: 400px) {

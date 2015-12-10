@@ -1,12 +1,12 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="en" ng-app="portfolioSite">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Nic Edwards">
     <meta name="description" content="Nic Edwards Portfolio">
     <meta name="keywords" content="HTML,CSS,JavaScript,lessons,blog,designer,design,UX,UI,AI,visual,ZURB,University,Notable,Photoshop,Illustrator,Adobe">
-    <title>Home</title>
+    <title>Nic Edwards</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/app.css">
@@ -16,53 +16,110 @@
   </head>
 
   <body>
-  <!-- logo + top-nav for links -->
-  <nav class="top-page-navigation">
+<!-- logo + top-nav for links -->
+  <nav class="hide-for-small top-page-navigation">
     <div class="row">
-    <div class="small-12 medium-6 column">
-      <img class="nic-logo" src="img/nic-logo.svg">
-      <span class="name-of-site-author">NIC EDWARDS</span>
-    </div>
-    <div class="small-12 medium-6 column">
-      <ul class="top-nav-menu">
-        <li><a href="work.html">Work</a></li>
-        <li><a href="img/nic-edwards-resume.pdf" target="_blank">Resumé</a></li>
-        <li><a href="about-me.html">About</a></li>
-        <li><a href="mailto:nic.edwrds@gmail.com?Subject=Hey!%20I%20Love%20Your%20Site!" target="_top">Contact</a></li>
-      </ul>
-    </div>
+      <div class="small-5 column">
+        <a href="index.html"><img class="nic-logo" src="img/nic-logo.svg">
+        <span class="name-of-site-author">NIC EDWARDS</span></a>
+      </div>
+      <div class="small-7 column">
+        <ul class="top-nav-menu">
+          <li><a href="index.html#work">Work</a></li>
+          <li><a href="img/nic-edwards-resume.pdf" target="_blank">Resumé</a></li>
+          <li><a href="about-me.html">About</a></li>
+          <li><a href="mailto:nic.edwrds@gmail.com?Subject=Hey%20I%20saw%20your%20site!" target="_top">Contact</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
 
-  <!-- background image w/ intro text -->
+<!-- background image w/ intro text -->
   <header class="home-page-background">
+<!-- mobile nav hidden for medium and up screens -->
+    <nav class="hide-for-medium-up">
+      <div id="menuToggle">
+        <input type="checkbox" />
+        
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <ul id="menu">
+          <a href="index.html"><li>Home</li></a>
+          <a href="index.html#work"><li>Work</li></a>
+          <a href="about-me.html"><li>About</li></a>
+          <a href="img/nic-edwards-resume.pdf" target="_blank"><li>Resumé</li></a>
+          <a href="about-me.html#contact"><li>Contact</li></a>
+        </ul>
+      </div>
+    </nav>
+    
     <div class="row">
-      <div class="small-8 column small-centered">
-        <h1 class="header-title-page-copy">Hi. I’m Nic Edwards and I’m a designer in the Bay Area</h1>
+      <div class="small-12 medium-8 column medium-centered">
+        <h1 class="header-title-page-copy">Hi. I’m Nic Edwards and I’m a designer in the Bay Area.</h1>
       </div>
     </div>
   </header>
-
-  <!-- Work links - lessons and case study -->
-  <section class="show-work-tiles">
-    <div class="row">
-      <h2 class="section-page-title">Recent Work</h2>
-      <div class="small-12 medium-6 column">
-        <div class="box box1"></div>
+  <section class="row show-work-tiles">
+    <div class="small-12 medium-6 medium-centered column">
+      <h2 id="work"class="text-center">Recent Work</h2>
+      <p class="home-section-description text-center">Here's a sample of what I've been up to. It spans sketching, user testing, graphic design, teaching, customer outreach and fun design things in general, and recently, a lot of code!</p> 
+    </div>
+<!-- Block-grid tiles for cards -->
+    <div class="small-12 large-10 medium-centered column">
+      <div class="row" ng-controller="workController">
+      <h3 class="text-center">Lessons</h3>
+      <hr>
+        <ul class="small-block-grid-1 medium-block-grid-3">
+          <li ng-repeat="workItem in work">
+            <div class="box {{workItem.imageTile}}">
+              <div class="overlay">
+                <h3 class="text-center hover-text work-tiles">{{workItem.tileTitle}}</h3>
+                <a class="custom-button" href="{{workItem.lessonLink}}" target="_blank">{{workItem.buttonCopy}}</a>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
-      <div class="small-12 medium-6 column">
-        <div class="box box2"></div>
+      <div class="row" ng-controller="visualsController">
+      <h3 class="text-center">Visuals</h3>
+      <hr>
+        <ul class="small-block-grid-1 medium-block-grid-3">
+          <li ng-repeat="visualItem in visuals">
+            <div class="box {{visualItem.imageTile}}">
+              <div class="overlay">
+                <h3 class="text-center hover-text work-tiles">{{visualItem.tileTitle}}</h3>
+                <a class="custom-button" href="{{visualItem.visualLink}}">{{visualItem.buttonCopy}}</a>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
+      <div class="row" ng-controller="casesController">
+      <h3 class="text-center">Case Study</h3>
+      <hr>
+        <ul class="small-block-grid-1 medium-block-grid-3">
+          <li ng-repeat="caseItem in cases">
+            <div class="box {{caseItem.imageTile}}">
+              <div class="overlay">
+                <h3 class="text-center hover-text work-tiles">{{caseItem.tileTitle}}</h3>
+                <a class="custom-button" href="{{caseItem.caseLink}}">{{caseItem.buttonCopy}}</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>          
     </div>
   </section>
 
-  <!-- footer + navigation -->
+<!-- footer + navigation -->
   <footer class="footer-navigation">
     <div class="row">
       <div class="small-12 column">
         <ul class="footer-nav-menu">
           <li><div class="on-hover-footer-icon linkedin"><a href="https://www.linkedin.com/pub/nic-edwards/36/a77/7a5/" target="_blank"><img class="menu-icon" src="img/nav-icons/svg/linkedin.svg"></a></div></li>
-          <li><div class="on-hover-footer-icon github"><a href="#"><img class="menu-icon" src="img/nav-icons/svg/github.svg"></a></li>
+          <li><div class="on-hover-footer-icon github"><a href="https://github.com/myzerly"><img class="menu-icon" src="img/nav-icons/svg/github.svg"></a></li>
           <li><div class="on-hover-footer-icon twitter"><a href="https://twitter.com/myzerly" target="_blank"><img class="menu-icon" src="img/nav-icons/svg/twitter.svg"></a></li>
           <li><div class="on-hover-footer-icon mail"><a href="mailto:nic.edwrds@gmail.com?Subject=Hey%20I%20saw%20your%20site!" target="_top"><img class="menu-icon" src="img/nav-icons/svg/mail.svg"></a></li>
         </ul>
@@ -73,9 +130,8 @@
     </div>
   </footer>
 
-  <script src="//code.jquery.com/jquery.min.js"></script>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/angular/angular.min.js"></script>
-  <script src="js/app.js"></script>
   <script src="js/foundation.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/app.js"></script>

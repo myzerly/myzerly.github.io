@@ -1,38 +1,128 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="en" ng-app="portfolioSite">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Nic Edwards">
     <meta name="description" content="Nic Edwards Portfolio">
-    <meta name="keywords" content="HTML,CSS,JavaScript,lessons,blog,designer,design,UX,UI,AI,visual,ZURB,Notable,Photoshop,Illustrator,Adobe">
+    <meta name="keywords" content="HTML,CSS,JavaScript,lessons,blog,designer,design,UX,UI,AI,visual,ZURB,University,Notable,Photoshop,Illustrator,Adobe">
     <title>About Me</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/app.css">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Rambla">
-    <link rel="icon" type="image/png" href="img/favicomatic/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="img/favicomatic/favicon-16x16.png" sizes="16x16" />
-    <script src="js/vendor/modernizr.js"></script>
+    <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16" />
+    <script src="js/modernizr.js"></script>
   </head>
 
-<body>
+  <body>
+<!-- logo + top-nav for links -->
+  <nav class="hide-for-small top-page-navigation">
+    <div class="row">
+    <div class="small-4 column">
+      <a href="index.html"><img class="nic-logo" src="img/nic-logo.svg">
+      <span class="name-of-site-author">NIC EDWARDS</span></a>
+    </div>
+    <div class="small-8 column">
+      <ul class="top-nav-menu">
+        <li><a href="index.html#work">Work</a></li>
+        <li><a href="img/nic-edwards-resume.pdf" target="_blank">Resumé</a></li>
+        <li><a href="about-me.html">About</a></li>
+        <li><a href="mailto:nic.edwrds@gmail.com?Subject=Hey%20I%20saw%20your%20site!" target="_top">Contact</a></li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+
+  <header>
+<!-- mobile nav -->
+    <nav class="hide-for-medium-up">
+      <div id="menuToggle">
+        <input type="checkbox" />
+        
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <ul id="menu">
+          <a href="index.html"><li>Home</li></a>
+          <a href="index.html#work"><li>Work</li></a>
+          <a href="about-me.html"><li>About</li></a>
+          <a href="img/nic-edwards-resume.pdf" target="_blank"><li>Resumé</li></a>
+          <a href="about-me.html#contact"><li>Contact</li></a>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
 <!-- About Me -->
-        <header class="hero">
-        <img class="myzerly-logo" src="img/clean-logo.svg">
-          <div id="top" class="row">
-            <div class="small-12 medium-8 small-centered column">
-              <h1 class="title-about-me">What's up? I'm Nic.</h1>
-              <p class="copy-about-me about-me-background"><a href="https://www.linkedin.com/pub/nic-edwards/36/a77/7a5/" target="_blank">I'm a product designer</a>, I worked on <a href="http://zurb.com/notable" target="_blank">Notable</a> and I love design. I build awesome products because I talk with customers to solve their problems.</p>
-            </div> 
-          </div>
-        </header>
-        <br>
+  <section>
+    <div class="row">
+      <div class="small-12 large-8 medium-centered column">
+        <p class="text-center"><img class="about-me-pic" src="img/nic-bishop.jpg" alt="profile picture"></p>
+        <h2 class="text-center">About Me</h2>
+        <p>Hey! My name is Nic Edwards and I live in Santa Cruz, California. I love climbing, trail running, lifting and just walking around downtown sipping on some Verve coffee. In a prior life I used to cook and worked with Bruno Chemel of Baumé, a two Michelin starred restaurant. I graduated from UC Davis in 2011 with a degree in East Asian Studies with an emphasis on Japanese language and culture.</p>
+        <p>By day I’m a Product Designer with experience working with engineers, front-end devs and customers. I worked on <a href="https://www.zurb.com/notable">Notable</a> for close to a year and a half while at ZURB Inc., a design consultancy that services companies such as Mozilla, Netflix, Samsung and Disney.</p>
+        <hr>
+      
+      <br>
+      <div class="row">
+        <div class="small-12 medium-6 column">
+          <h3 class="text-center">About this Site</h3>
+          <p>This site is hand coded using Foundation for the grid and the box grid. It uses HTML, SASS, JQuery and some Angular as well. The custom icons were created using Illustrator and the visual assets were a mish-mash between PS, AI and Sketch. Photos are courtesy of the iPhone 6.</p>
+        </div>
+        <div class="small-12 medium-6 column">
+          <h3 id="contact" class="text-center">Contact</h3>
+          <p>If you're interested in working with me, I'm available! Here are a couple of ways to get in touch:</p>
+          <ul class="list-indent">
+            <li><strong>Phone:</strong> 408-335-3527</li>
+            <li><strong>Email:</strong> <a href="mailto:nic.edwrds@gmail.com?Subject=Hey%20I%20saw%20your%20site!" target="_top">nic.edwrds@gmail.com</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/pub/nic-edwards/36/a77/7a5/" target="_blank">Nic Edwards</a></li>
+            <li><strong>Twitter:</strong> <a href="https://twitter.com/myzerly" target="_blank">@myzerly</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/myzerly" target="_blank">myzerly</a></li>
+          </ul>
+        </div>
+      </div>
+      <br>
+      <p class="text-center"><a class="custom-button black" href="index.html#work">See Some Work</a></p>
+      </div>
+    </div>
+  </section>
 
-    <script src="//code.jquery.com/jquery.min.js"></script>
-    <script src="js/foundation.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
+<!-- footer + navigation -->
+  <footer class="footer-navigation">
+    <div class="row">
+      <div class="small-12 column">
+        <ul class="footer-nav-menu">
+          <li><div class="on-hover-footer-icon linkedin"><a href="https://www.linkedin.com/pub/nic-edwards/36/a77/7a5/" target="_blank"><img class="menu-icon" src="img/nav-icons/svg/linkedin.svg"></a></div></li>
+          <li><div class="on-hover-footer-icon github"><a href="https://www.github.com/myzerly"><img class="menu-icon" src="img/nav-icons/svg/github.svg"></a></li>
+          <li><div class="on-hover-footer-icon twitter"><a href="https://twitter.com/myzerly" target="_blank"><img class="menu-icon" src="img/nav-icons/svg/twitter.svg"></a></li>
+          <li><div class="on-hover-footer-icon mail"><a href="mailto:nic.edwrds@gmail.com?Subject=Hey%20I%20saw%20your%20site!" target="_top"><img class="menu-icon" src="img/nav-icons/svg/mail.svg"></a></li>
+        </ul>
+      </div>
+      <div class="small-12 column text-center">
+        <p class="footer-copyright-text">© 2015 Nic Edwards. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="js/foundation.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
   </body>
 </html>
+
+<!-- potential email form for v3 -->
+        <!-- <h2>Send e-mail to someone@example.com:</h2>
+        <form action="MAILTO:nic.edwrds@gmail.com?Subject=Hey%20I%20saw%20your%20site!" method="post" enctype="text/plain"><br>
+          <input type="text" placeholder="your name">
+          <input type="text" name="email " placeholder="your email"><br>
+          <input type="text" name="comment " placeholder="your comment"><br>
+          <input class="custom-button black" type="submit" value="Send">
+          <input class="custom-button black" type="reset" value="Reset">
+        </form> -->
