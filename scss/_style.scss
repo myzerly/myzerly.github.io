@@ -58,13 +58,19 @@ header {
     background: url(../img/artboard-1.jpg) no-repeat center 0 fixed;
   }
   &.work-page-background {
-    background: url(../img/case-studies.jpg) no-repeat center center;
-    background-position:50% 50%; 
-  background-repeat: no-repeat;
-  background-size: contain;
+    background: url(../img/case-study.jpg) no-repeat 0 0 fixed;
+  }
+  &.about-page-background {
+    background: url(../img/case-study.jpg) no-repeat 0 center fixed;
   }
 
 }
+
+.about-me-pic {
+  max-width: 200px;
+  height: auto;
+  border-radius: 50%;
+  } 
 
 .show-work-tiles {
     margin-bottom: 5rem;
@@ -263,11 +269,19 @@ footer {
   padding-right: 15px;
   color: #fff !important;
   background-color: rgba(0,0,0,0.0);
+  transition: background .5s ease;
+  transition: color .25s ease;
+  &:hover {
+    background-color: rgba(255,255,255,0.1);
+    
+  }
   &.black {
     color: #000 !important;
     border-color: #000;
     &:hover {
-      background-color: rgba(0,0,0,0.1);
+      // background-color: rgba(235,236,238,0.5);
+      background-color: #000;
+      color: #fff !important;
     }
   }
 }
@@ -358,7 +372,7 @@ input {
   margin-bottom: 5px;
   position: relative;
   
-  background: #fff;
+  background: #EBECEE;
   border-radius: 3px;
   
   z-index: 1;
