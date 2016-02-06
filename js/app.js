@@ -40,19 +40,19 @@ var work = [
   {
     imageTile: "tile-sketching",
     buttonCopy: "Read More",
-    tileTitle: "A Guide to Consisten Sketches",
+    tileTitle: "Consistent Sketching",
     lessonLink: "http://zurb.com/university/lessons/sketched-out-a-guide-for-consistent-sketches"
   },
   {
     imageTile: "tile-testing",
     buttonCopy: "Read More",
-    tileTitle: "The How-to for User Testing",
+    tileTitle: "User Testing",
     lessonLink: "http://zurb.com/university/lessons/assumptions-suck-it-s-time-to-get-some-real-answers"
   },
   {
     imageTile: "tile-timeboxing",
     buttonCopy: "Read More",
-    tileTitle: "Methods for Effective Timeboxing",
+    tileTitle: "Timeboxing",
     lessonLink: "http://zurb.com/university/lessons/boxin-up-that-time-timeboxing-for-the-big-win"
   }
 

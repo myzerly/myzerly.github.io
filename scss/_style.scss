@@ -200,6 +200,9 @@ footer {
   &.work-tiles {
     margin-bottom: 1.5rem;
   }
+  &.black {
+    color: #000;
+  }
 }
 
 //"box" generates the binding parent element for the 
@@ -207,18 +210,18 @@ footer {
 //It uses the "contain" property to ensure that the background 
 //stays within the constraints of the parent element.
 .box {
-  @media (min-width: 400px) {
-    height: 300px;
-    width: 300px;
-  }
-  @media (min-width: 645px) {
-    height: 200px;
-    width: 200px;
-  }
-  @media (min-width: 945px) {
-    height: 275px;
-    width: 275px;
-  }
+  // @media (min-width: 400px) {
+  //   height: 300px;
+  //   width: 300px;
+  // }
+  // @media (min-width: 645px) {
+  //   height: 200px;
+  //   width: 200px;
+  // }
+  // @media (min-width: 945px) {
+  //   height: 275px;
+  //   width: 275px;
+  // }
   
   background-position:50% 50%; 
   background-repeat: no-repeat;
@@ -227,6 +230,8 @@ footer {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 2rem;
+  height: 300px;
+  width: 300px;
 
   &.tile-navigation {
     background-image: url(../img/tile-navigation.png);
@@ -328,8 +333,8 @@ input {
 {
   display: block;
   position: relative;
-  top: 50px;
-  left: 50px;
+  margin-top: 30px;
+  margin-left: 30px;
   
   z-index: 1;
   
