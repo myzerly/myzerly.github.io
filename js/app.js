@@ -79,6 +79,13 @@ var cases = [
     buttonCopy: "See More",
     tileTitle: "Case Study: Notable Prototypes",
     caseLink: "case_study.html"
+  },
+  {
+    imageTile: "tile-health",
+    buttonCopy: "Keynote Slides",
+    tileTitle: "Design Challenge: Apple Health",
+    // caseLink: "apple_health.html"
+    caseLink: "img/apple-health.pdf"
   }
 ];
 
