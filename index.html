@@ -16,6 +16,7 @@
   </head>
 
   <body>
+
 <!-- logo + top-nav for links -->
   <div class="row">
     <div class="small-12 column hide-for-small">
@@ -40,6 +41,7 @@
 
 <!-- background image w/ intro text -->
   <header class="home-page-background">
+
 <!-- mobile nav hidden for medium and up screens -->
     <div class="hide-for-medium-up">  
       <nav class="row collapse">
@@ -71,11 +73,12 @@
       <h2 id="work"class="text-center">Recent Work</h2>
       <p class="home-section-description text-center">Here's a sample of what I've been up to. It spans sketching, user testing, graphic design, teaching, customer outreach and fun design things in general, and recently, a lot of code!</p> 
     </div>
-<!-- Block-grid tiles for cards desktop -->
+
+<!-- Desktop Block-grid tiles for cards Lessons -->
     <div class="small-12 large-10 medium-centered column">
       <div class="show-for-large-up" ng-controller="workController">
-      <h3 class="text-center">Lessons</h3>
-      <hr>
+        <h3 class="text-center">Lessons</h3>
+        <hr>
         <ul class="small-block-grid-1 medium-block-grid-3">
           <li ng-repeat="workItem in work">
             <div class="box {{workItem.imageTile}}">
@@ -87,22 +90,10 @@
           </li>
         </ul>
       </div>
-<!-- Mobile/Tablet Block-grid tiles -->
-      <div class="hide-for-large-up" ng-controller="workController">
-        <h3 class="text-center">Lessons</h3>
+<!-- Desktop Block-grid tiles for cards Visuals -->
+      <div class="show-for-large-up" ng-controller="visualsController">
+        <h3 class="text-center">Visuals</h3>
         <hr>
-        <ul class="text-center small-block-grid-1 medium-block-grid-3">
-          <li ng-repeat="workItem in work">
-          <a href="{{workItem.lessonLink}}" target="_blank">
-            <div class="box {{workItem.imageTile}}"></div>
-            <h5 class="text-center">{{workItem.tileTitle}}</h3>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <!-- <div class="row" ng-controller="visualsController">
-      <h3 class="text-center">Visuals</h3>
-      <hr>
         <ul class="small-block-grid-1 medium-block-grid-3">
           <li ng-repeat="visualItem in visuals">
             <div class="box {{visualItem.imageTile}}">
@@ -113,10 +104,15 @@
             </div>
           </li>
         </ul>
-      </div> -->
-      <div ng-controller="casesController">
-      <h3 class="text-center">Case Study</h3>
-      <hr>
+      </div>
+<!-- Links for Visuals (made easy) -->
+<!-- http://myzerly.com/visuals1-athl.html -->
+<!-- http://myzerly.com/visuals2-equi.html -->
+
+<!-- Desktop Block-grid tiles for cards Visuals -->
+      <div class="show-for-large-up" ng-controller="casesController">
+        <h3 class="text-center">Case Study</h3>
+        <hr>
         <ul class="small-block-grid-1 medium-block-grid-3">
           <li ng-repeat="caseItem in cases">
             <div class="box {{caseItem.imageTile}}">
@@ -129,6 +125,54 @@
         </ul>
       </div>          
     </div>
+
+<!-- Mobile/Tablet Block-grid tiles Lessons -->
+      <div class="hide-for-large-up" ng-controller="workController">
+        <h3 class="text-center">Lessons</h3>
+        <hr>
+        <ul class="text-center small-block-grid-1 medium-block-grid-3">
+          <li ng-repeat="workItem in work">
+          <a href="{{workItem.lessonLink}}" target="_blank">
+            <div class="box {{workItem.imageTile}}"></div>
+            <h5 class="text-center">{{workItem.tileTitle}}</h3>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+<!-- Mobile/Tablet Block-grid tiles Visuals -->
+      <div class="hide-for-large-up" ng-controller="workController">
+        <h3 class="text-center">Visuals</h3>
+        <hr>
+        <ul class="text-center small-block-grid-1 medium-block-grid-3">
+          <li ng-repeat="visualItem in visuals">
+          <a href="{{workItem.lessonLink}}" target="_blank">
+            <div class="box {{workItem.imageTile}}"></div>
+            <h5 class="text-center">{{workItem.tileTitle}}</h3>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+<!-- Mobile/Tablet Block-grid tiles Case Studies -->
+      <div class="hide-for-large-up" ng-controller="casesController">
+        <h3 class="text-center">Case Studies</h3>
+        <hr>
+        <ul class="text-center small-block-grid-1 medium-block-grid-3">
+          <li ng-repeat="workItem in work">
+          <a href="{{workItem.lessonLink}}" target="_blank">
+            <div class="box {{workItem.imageTile}}"></div>
+            <h5 class="text-center">{{workItem.tileTitle}}</h3>
+            </a>
+          </li>
+        </ul>
+      </div>            
+      
+
+
+
+
+      
   </section>
 
 <!-- footer + navigation -->

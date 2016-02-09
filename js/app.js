@@ -61,15 +61,15 @@ var work = [
 var visuals = [
   {
     imageTile: "tile-athletigen",
-    buttonCopy: "See More",
+    buttonCopy: "Upon Request",
     tileTitle: "Visual Direction: Athletigen",
-    visualLink: "athletigen.html"
+    visualLink: "mailto:nic.edwrds@gmail.com?Subject=%20I'm%20Interested%20in%20Seeing%20Your%20Visuals!"
   },
   {
     imageTile: "tile-equinix",
-    buttonCopy: "See More",
+    buttonCopy: "Upon Request",
     tileTitle: "Visual Direction: Equinix",
-    visualLink: "equinix.html"
+    visualLink: "mailto:nic.edwrds@gmail.com?Subject=%20I'm%20Interested%20in%20Seeing%20Your%20Visuals!"
   }
 ];
 
