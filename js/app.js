@@ -84,7 +84,7 @@ var cases = [
     imageTile: "tile-health",
     buttonCopy: "Keynote Slides",
     tileTitle: "Design Challenge: Apple Health",
-    caseLink: "http://myzerly.com/img/apple-health.pdf"
+    caseLink: "img/apple-health.pdf"
   }
 ];
 
