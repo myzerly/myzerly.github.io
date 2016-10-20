@@ -40,19 +40,19 @@ var work = [
   {
     imageTile: "tile-sketching",
     buttonCopy: "Read More",
-    tileTitle: "A Guide to Consisten Sketches",
+    tileTitle: "Consistent Sketching",
     lessonLink: "http://zurb.com/university/lessons/sketched-out-a-guide-for-consistent-sketches"
   },
   {
     imageTile: "tile-testing",
     buttonCopy: "Read More",
-    tileTitle: "The How-to for User Testing",
+    tileTitle: "User Testing",
     lessonLink: "http://zurb.com/university/lessons/assumptions-suck-it-s-time-to-get-some-real-answers"
   },
   {
     imageTile: "tile-timeboxing",
     buttonCopy: "Read More",
-    tileTitle: "Methods for Effective Timeboxing",
+    tileTitle: "Timeboxing",
     lessonLink: "http://zurb.com/university/lessons/boxin-up-that-time-timeboxing-for-the-big-win"
   }
 
@@ -61,15 +61,15 @@ var work = [
 var visuals = [
   {
     imageTile: "tile-athletigen",
-    buttonCopy: "See More",
+    buttonCopy: "Upon Request",
     tileTitle: "Visual Direction: Athletigen",
-    visualLink: "athletigen.html"
+    visualLink: "mailto:nic.edwrds@gmail.com?Subject=%20I'm%20Interested%20in%20Seeing%20Your%20Visuals!"
   },
   {
     imageTile: "tile-equinix",
-    buttonCopy: "See More",
+    buttonCopy: "Upon Request",
     tileTitle: "Visual Direction: Equinix",
-    visualLink: "equinix.html"
+    visualLink: "mailto:nic.edwrds@gmail.com?Subject=%20I'm%20Interested%20in%20Seeing%20Your%20Visuals!"
   }
 ];
 
@@ -79,6 +79,12 @@ var cases = [
     buttonCopy: "See More",
     tileTitle: "Case Study: Notable Prototypes",
     caseLink: "case_study.html"
+  },
+  {
+    imageTile: "tile-health",
+    buttonCopy: "Keynote Slides",
+    tileTitle: "Design Challenge: Apple Health",
+    caseLink: "img/apple-health.pdf"
   }
 ];
 

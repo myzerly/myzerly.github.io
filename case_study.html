@@ -17,48 +17,48 @@
 
   <body>
 <!-- logo + top-nav for links -->
-  <nav class="hide-for-small top-page-navigation">
+  <nav class="show-for-medium-up top-page-navigation">
     <div class="row">
-      <div class="small-5 column">
-        <a href="index.html"><img class="nic-logo" src="img/nic-logo.svg">
-        <span class="name-of-site-author">NIC EDWARDS</span></a>
-      </div>
-      <div class="small-7 column">
-        <ul class="top-nav-menu">
-          <li><a href="index.html#work">Work</a></li>
-          <li><a href="img/nic-edwards-resume.pdf" target="_blank">Resumé</a></li>
-          <li><a href="about-me.html">About</a></li>
-          <li><a href="mailto:nic.edwrds@gmail.com?Subject=Hey%20I%20saw%20your%20site!" target="_top">Contact</a></li>
-        </ul>
-      </div>
+    <div class="small-6 column">
+      <a href="index.html"><img class="nic-logo" src="img/nic-logo.svg">
+      <span class="name-of-site-author">NIC EDWARDS</span></a>
+    </div>
+    <div class="small-6 column">
+      <ul class="top-nav-menu">
+        <li><a href="index.html#work">Work</a></li>
+        <li><a href="img/nic-edwards-resume.pdf" target="_blank">Resumé</a></li>
+        <li><a href="about-me.html">About</a></li>
+        <li><a href="mailto:nic.edwrds@gmail.com?Subject=Hey%20I%20saw%20your%20site!" target="_top">Contact</a></li>
+      </ul>
+    </div>
     </div>
   </nav>
 
-<!-- background image w/ intro text -->
-  <header class="work-page-background">
+<header class="work-page-background">
 
-<!-- mobile nav -->
-    <nav class="hide-for-medium-up">
-      <div id="menuToggle">
-        <input type="checkbox" />
-        
-        <span></span>
-        <span></span>
-        <span></span>
-
-        <ul id="menu">
-          <a href="index.html"><li>Home</li></a>
-          <a href="index.html#work"><li>Work</li></a>
-          <a href="about-me.html"><li>About</li></a>
-          <a href="img/nic-edwards-resume.pdf" target="_blank"><li>Resumé</li></a>
-          <a href="about-me.html#contact"><li>Contact</li></a>
-        </ul>
-      </div>
-    </nav>
-    
+<!-- mobile nav hidden for medium and up screens -->
+    <div class="hide-for-medium-up">  
+      <nav class="row collapse">
+        <div class="small-12 column">
+          <div id="menuToggle">
+            <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+            <ul id="menu">
+              <a href="index.html"><li>Home</li></a>
+              <a href="#work"><li>Work</li></a>
+              <a href="about-me.html"><li>About</li></a>
+              <a href="img/nic-edwards-resume.pdf" target="_blank"><li>Resumé</li></a>
+              <a href="mailto:nic.edwrds@gmail.com?Subject=Hey!%20I%20Love%20Your%20Site!"><li>Contact</li></a>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>  
     <div class="row">
-      <div class="small-8 column small-centered">
-        <h1 class="header-title-page-copy">Case Study: Notable's Hotspot Menu</h1>
+      <div class="small-12 medium-8 column medium-centered">
+        <h1 class="header-title-page-copy">Case Study: Notable's Prototyping Tool</h1>
       </div>
     </div>
   </header>
@@ -120,6 +120,7 @@
 
     </div>
   </div>
+  <br>
   <p class="text-center"><a class="custom-button black image-center" href="index.html#work">More Work</a></p>
   </section>
 
