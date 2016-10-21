@@ -6,7 +6,7 @@
     <meta name="author" content="Nic Edwards">
     <meta name="description" content="Nic Edwards Portfolio">
     <meta name="keywords" content="HTML,CSS,JavaScript,lessons,blog,designer,design,UX,UI,AI,visual,ZURB,University,Notable,Photoshop,Illustrator,Adobe">
-    <title>Nic Edwards</title>
+    <title>About Me</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/app.css">
@@ -16,206 +16,48 @@
   </head>
 
   <body>
+<!-- button to check on old index page for qa -->
+    <!-- <button type="button" name="button" class="button"><a href="index.html">back to index</a></button> -->
 
-<!-- logo + top-nav for links -->
-  <div class="row">
-    <div class="small-12 column hide-for-small">
-      <nav class="top-page-navigation">
-        <div class="row">
-        <div class="small-12 medium-6 column">
-          <img class="nic-logo" src="img/nic-logo.svg">
-          <span class="name-of-site-author">NIC EDWARDS</span>
+<!-- About Me -->
+    <section>
+      <div class="row">
+        <div class="small-12 medium-8 medium-centered column">
+          <br>
+          <h1 class="text-center">Hi, I'm Nic Edwards</h1>
+          <p class="text-center"><img class="about-me-pic" src="img/nic-bishop.jpg" alt="profile picture"></p>
+          <!-- <h3 class="text-center">About Me</h3> -->
+          <p class="text-center">I live in Santa Cruz, California. I love climbing, trail running, lifting, learning code and just walking around downtown sipping on some Verve coffee.</p>
+          <p class="text-center">I’m a CSM with over two years of experience working with engineers, front-end devs, product managers, product designers and customers. I managed <a href="https://www.zurb.com/notable">Notable's</a> enterprise accounts with a portfolio that included Disney, ESPN, Trip Advisor, Salesforce, Intuit, DigitasLBi and many others.</p>
+          <br>
+          <p class="text-center"><a class="custom-button black" href="work.html">See Some Work</a></p>
         </div>
-        <div class="small-12 medium-6 column">
-          <ul class="top-nav-menu">
-            <li><a href="#work">Work</a></li>
-            <li><a href="img/nic-edwards-resume.pdf" target="_blank">Resumé</a></li>
-            <li><a href="about-me.html">About</a></li>
-            <li><a href="mailto:nic.edwrds@gmail.com?Subject=Hey!%20I%20Love%20Your%20Site!" target="_top">Contact</a></li>
-          </ul>
-        </div>
-        </div>
-      </nav>
-    </div>  
-  </div>
-
-<!-- background image w/ intro text -->
-  <header class="home-page-background">
-
-<!-- mobile nav hidden for medium and up screens -->
-    <div class="hide-for-medium-up">  
-      <nav class="row collapse">
-        <div class="small-12 column">
-          <div id="menuToggle">
-            <input type="checkbox" />
-              <span></span>
-              <span></span>
-              <span></span>
-            <ul id="menu">
-              <a href="index.html"><li>Home</li></a>
-              <a href="index.html#work"><li>Work</li></a>
-              <a href="about-me.html"><li>About</li></a>
-              <a href="img/nic-edwards-resume.pdf" target="_blank"><li>Resumé</li></a>
-              <a href="mailto:nic.edwrds@gmail.com?Subject=Hey!%20I%20Love%20Your%20Site!"><li>Contact</li></a>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>  
-    <div class="row">
-      <div class="small-12 medium-8 column medium-centered">
-        <h1 class="header-title-page-copy">Hi. I’m Nic Edwards and I’m a designer in the Bay Area.</h1>
       </div>
-    </div>
-  </header>
-  <section class="row show-work-tiles">
-    <div class="small-12 medium-6 medium-centered column">
-      <h1 id="work"class="text-center">Recent Work</h2>
-      <p class="home-section-description text-center">Here's a sample of what I've been up to. It spans sketching, user testing, graphic design, teaching, customer outreach and fun design things in general, and recently, a lot of code!</p> 
-    </div>
-
-<!-- Desktop Styles -->
-<!-- Desktop Block-grid tiles for cards Lessons -->
-    <div class="small-12 large-10 medium-centered column">
-      <div class="show-for-large-up" ng-controller="workController">
-        <h3 class="text-center">Lessons</h3>
-        <hr>
-        <ul class="small-block-grid-1 medium-block-grid-3">
-          <li ng-repeat="workItem in work">
-            <div class="box {{workItem.imageTile}}">
-              <div class="overlay">
-                <h3 class="text-center hover-text work-tiles">{{workItem.tileTitle}}</h3>
-                <a class="custom-button" href="{{workItem.lessonLink}}" target="_blank">{{workItem.buttonCopy}}</a>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-<!-- Desktop Block-grid tiles for cards Visuals -->
-      <div class="show-for-large-up" ng-controller="visualsController">
-        <h3 class="text-center">Visuals</h3>
-        <hr>
-        <ul class="small-block-grid-1 medium-block-grid-3">
-          <li ng-repeat="visualItem in visuals">
-            <div class="box {{visualItem.imageTile}}">
-              <div class="overlay">
-                <h3 class="text-center hover-text work-tiles">{{visualItem.tileTitle}}</h3>
-                <a class="custom-button" href="{{visualItem.visualLink}}">{{visualItem.buttonCopy}}</a>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-<!-- Links for Visuals (made easy) -->
-<!-- http://myzerly.com/visuals1-athl.html -->
-<!-- http://myzerly.com/visuals2-equi.html -->
-
-<!-- Desktop Block-grid tiles for cards Case Studies -->
-      <div class="show-for-large-up" ng-controller="casesController">
-        <h3 class="text-center">Case Studies</h3>
-        <hr>
-        <ul class="small-block-grid-1 medium-block-grid-3">
-          <li ng-repeat="caseItem in cases">
-            <div class="box {{caseItem.imageTile}}">
-              <div class="overlay">
-                <h3 class="text-center hover-text work-tiles">{{caseItem.tileTitle}}</h3>
-                <a class="custom-button" href="{{caseItem.caseLink}}">{{caseItem.buttonCopy}}</a>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>          
-
-<!-- Mobile Styles -->
-<!-- Mobile/Tablet Block-grid tiles Lessons -->
-      <div class="hide-for-large-up" ng-controller="workController">
-        <h1 class="text-center">Lessons</h3>
-        <hr>
-        <ul class="text-center small-block-grid-1 medium-block-grid-3">
-          <li ng-repeat="workItem in work">
-          <a href="{{workItem.lessonLink}}" target="_blank">
-            <div class="box {{workItem.imageTile}}"></div>
-            <h5 class="mobile-title text-center">{{workItem.tileTitle}}</h3>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-<!-- Mobile/Tablet Block-grid tiles Visuals -->
-      <div class="hide-for-large-up" ng-controller="visualsController">
-        <h1 class="text-center">Visuals</h3>
-        <hr>
-        <ul class="text-center small-block-grid-1 medium-block-grid-3">
-          <li ng-repeat="visualItem in visuals">
-          <a href="{{visualItem.lessonLink}}" target="_blank">
-            <div class="box {{visualItem.imageTile}}"></div>
-            <h5 class="mobile-title text-center">{{visualItem.tileTitle}}</h3>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-<!-- Mobile/Tablet Block-grid tiles Case Studies -->
-      <div class="hide-for-large-up" ng-controller="casesController">
-        <h1 class="text-center">Case Studies</h3>
-        <hr>
-        <ul class="text-center small-block-grid-1 medium-block-grid-3">
-          <li ng-repeat="caseItem in cases">
-          <a href="{{caseItem.caseLink}}" target="_blank">
-            <div class="box {{caseItem.imageTile}}"></div>
-            <h5 class="mobile-title text-center">{{caseItem.tileTitle}}</h3>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>                 
-  </section>
-
-<!-- footer + navigation -->
-  <footer class="footer-navigation">
-    <div class="row">
-      <div class="small-12 column">
+    </section>
+<!-- Footer text for site. Explains how the site was made -->
+    <hr>
+    <footer class="row">
+      <div class="small-10 medium-6 large-4 small-centered columns">
         <ul class="footer-nav-menu">
-          <li><div class="on-hover-footer-icon linkedin"><a href="https://www.linkedin.com/pub/nic-edwards/36/a77/7a5/" target="_blank"><img class="menu-icon" src="img/nav-icons/svg/linkedin.svg"></a></div></li>
-          <li><div class="on-hover-footer-icon github"><a href="https://github.com/myzerly"><img class="menu-icon" src="img/nav-icons/svg/github.svg"></a></li>
-          <li><div class="on-hover-footer-icon twitter"><a href="https://twitter.com/myzerly" target="_blank"><img class="menu-icon" src="img/nav-icons/svg/twitter.svg"></a></li>
-          <li><div class="on-hover-footer-icon mail"><a href="mailto:nic.edwrds@gmail.com?Subject=Hey%20I%20saw%20your%20site!" target="_top"><img class="menu-icon" src="img/nav-icons/svg/mail.svg"></a></li>
+          <li><div class="footer-icon linkedin"><a href="https://www.linkedin.com/pub/nic-edwards/36/a77/7a5/" target="_blank"><img class="menu-icon" src="img/nav-icons/svg/linkedin-hover.svg"></a></div></li>
+          <li><div class="footer-icon github"><a href="https://www.github.com/myzerly"><img class="menu-icon" src="img/nav-icons/svg/github-hover.svg"></a></div></li>
+          <li><div class="footer-icon mail"><a href="mailto:nic.edwrds@gmail.com?Subject=Hey%20I%20saw%20your%20site!" target="_top"><img class="menu-icon" src="img/nav-icons/svg/mail-hover.svg"></a></div></li>
         </ul>
-      </div>
-      <div class="small-12 column text-center">
-        <p class="footer-copyright-text">© 2015 Nic Edwards. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
 
-  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <div>
+          <p class="footer-copyright-text text-center">© 2016 Nic Edwards. All rights reserved.</p>
+          <p class="about-this-site-copy">This site is hand coded using Foundation. It uses HTML, SASS and some Angular as well. The custom icons were created using Illustrator.</p>
+        </div>
+      </div>
+    </footer>
+
+
+  <script src="https://code.jquery.com/jquery.min.js"></script>
   <script src="bower_components/angular/angular.min.js"></script>
   <script src="js/foundation.js"></script>
-  <script src="js/slick.min.js"></script>
   <script src="js/app.js"></script>
   <script>
     $(document).foundation();
   </script>
   </body>
 </html>
-
-<!-- links to important codepens -->
-
-<!-- <a href="http://codepen.io/anon/pen/NqrKpr" target="_blank"><img src="img/background-pattern.png">Cards+Toggle Card image with JQuery</a>
-<a href="http://codepen.io/anon/pen/RPGqRN" target="_blank"><img src="img/background-pattern.png"><p>Learning JQuery basics: onClick etc.</a>
-<a href="http://codepen.io/anon/pen/qdmdGm" target="_blank"><img src="img/background-pattern.png">JQuery multiple functions on a single click</a> -->
-
-<!-- links to articles not mentioned -->
-
-<!-- <li><a href="http://zurb.com/university/lessons/assumptions-suck-it-s-time-to-get-some-real-answers"><img class="th" src="img/lessons/user-testing.png">User Testing</a></li>
-<li><a href="http://zurb.com/university/lessons/get-your-ideas-rolling-building-momentum-through-iteration"><img class="th" src="img/lessons/notable-lesson-iteration.png">Iteration Builds Momentum</a></li>
-<li><a href="http://zurb.com/university/lessons/navigating-to-success-sketching-navigational-components"><img class="th" src="img/lessons/navigation-sketching.png">Navigational Sketching</a></li> -->
-
-<!-- links to social & linkedin -->
-
-<!-- <a href="https://www.linkedin.com/pub/nic-edwards/36/a77/7a5/" target="_blank">LinkedIn</a>
-<a href="https://twitter.com/myzerly" target="_blank">Twitter</a> -->
-
-<!-- Useful Git command to remove files from cache -->
-
-<!-- git filter-branch --index-filter 'git rm -r --cached --ignore-unmatch [path/to/file.thing]' -f HEAD -->
