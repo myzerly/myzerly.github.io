@@ -44,7 +44,7 @@
                   <div class="box {{workItem.imageTile}}">
                     <div class="overlay">
                       <h3 class="text-center hover-text work-tiles">{{workItem.tileTitle}}</h3>
-                      <a class="custom-button" href="{{workItem.lessonLink}}" target="_blank">{{workItem.buttonCopy}}</a>
+                      <a class="custom-button" href="{{workItem.lessonLink}}">{{workItem.buttonCopy}}</a>
                     </div>
                   </div>
                 </li>
@@ -57,7 +57,7 @@
             <div class="hide-for-large-up" ng-controller="workController">
               <ul class="text-center small-block-grid-1 medium-block-grid-3">
                 <li ng-repeat="workItem in work">
-                <a href="{{workItem.lessonLink}}" target="_blank">
+                <a href="{{workItem.lessonLink}}">
                   <div class="box box-small {{workItem.imageTile}}"></div>
                   <h5 class="mobile-title text-center">{{workItem.tileTitle}}</h3>
                   </a>
