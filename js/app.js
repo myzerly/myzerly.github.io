@@ -33,7 +33,7 @@ var work = [
     imageTile: "tile-prototype",
     buttonCopy: "See More",
     tileTitle: "Case Study: Notable Prototypes",
-    caseLink: "case_study.html"
+    lessonLink: "case_study.html"
   },
   {
     imageTile: "tile-navigation",
@@ -45,31 +45,31 @@ var work = [
     imageTile: "tile-persona",
     buttonCopy: "Read More",
     tileTitle: "Creating Believable Personas",
-    lessonLink: "http://zurb.com/university/lessons/creating-a-believable-user-the-quick-guide-to-personas"
+    lessonLink: "lessons/personas.html"
   },
   {
     imageTile: "tile-redo-momentum",
     buttonCopy: "Read More",
     tileTitle: "Building Momentum Through Iteration",
-    lessonLink: "https://zurb.com/expo/lessons/get-your-ideas-rolling-building-momentum-through-iteration"
+    lessonLink: "lessons/iteration.html"
   },
   {
     imageTile: "tile-sketching",
     buttonCopy: "Read More",
     tileTitle: "Consistent Sketching",
-    lessonLink: "http://zurb.com/university/lessons/sketched-out-a-guide-for-consistent-sketches"
+    lessonLink: "lessons/consistent_sketching.html"
   },
   {
     imageTile: "tile-testing",
     buttonCopy: "Read More",
     tileTitle: "User Testing",
-    lessonLink: "http://zurb.com/university/lessons/assumptions-suck-it-s-time-to-get-some-real-answers"
+    lessonLink: "lessons/user_testing.html"
   },
   {
     imageTile: "tile-timeboxing",
     buttonCopy: "Read More",
     tileTitle: "Timeboxing",
-    lessonLink: "http://zurb.com/university/lessons/boxin-up-that-time-timeboxing-for-the-big-win"
+    lessonLink: "lessons/time_box.html"
   }
 ];
 

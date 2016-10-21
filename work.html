@@ -24,7 +24,9 @@
       <div class="row">
         <div class="small-12 medium-8 medium-centered column">
           <br>
-          <h1 class="text-center">Here's some work I've done:</h1>
+          <h2 class="text-center">Work</h2>
+          <h6 class="text-center">by Nic Edwards</h6>
+          <br>
           <!-- <h3 class="text-center">About Me</h3> -->
           <p class="text-center"></p>
           <!-- <p class="text-center"><a class="custom-button black" href="index.html#work">See Some Work</a></p> -->
@@ -37,8 +39,6 @@
         <div class="row">
           <div class="small-12 large-8 small-centered column">
             <div class="show-for-large-up" ng-controller="workController">
-              <h3 class="text-center">Work</h3>
-              <hr>
               <ul class="small-block-grid-1 medium-block-grid-2">
                 <li ng-repeat="workItem in work">
                   <div class="box {{workItem.imageTile}}">
@@ -55,7 +55,7 @@
 <!-- Mobile Styles -->
 <!-- Mobile/Tablet Block-grid tiles Lessons -->
             <div class="hide-for-large-up" ng-controller="workController">
-              <h1 class="text-center">Lessons</h3>
+              <h1 class="text-center">Work</h3>
               <hr>
               <ul class="text-center small-block-grid-1 medium-block-grid-3">
                 <li ng-repeat="workItem in work">
@@ -67,22 +67,27 @@
               </ul>
             </div>
           </div>
+        <br>
+        <br>
+        <p class="text-center"><a class="custom-button black" href="index.html">Home</a></p>
+        <br>
     </section>
+    <!-- Footer text for site. Explains how the site was made -->
     <hr>
-    <div class="row">
+    <footer class="row">
       <div class="small-10 medium-6 large-4 small-centered columns">
         <ul class="footer-nav-menu">
           <li><div class="footer-icon linkedin"><a href="https://www.linkedin.com/pub/nic-edwards/36/a77/7a5/" target="_blank"><img class="menu-icon" src="img/nav-icons/svg/linkedin-hover.svg"></a></div></li>
           <li><div class="footer-icon github"><a href="https://www.github.com/myzerly"><img class="menu-icon" src="img/nav-icons/svg/github-hover.svg"></a></div></li>
           <li><div class="footer-icon mail"><a href="mailto:nic.edwrds@gmail.com?Subject=Hey%20I%20saw%20your%20site!" target="_top"><img class="menu-icon" src="img/nav-icons/svg/mail-hover.svg"></a></div></li>
         </ul>
-<!-- Footer text for site. Explains how the site was made -->
-        <footer>
+
+        <div>
           <p class="footer-copyright-text text-center">© 2016 Nic Edwards. All rights reserved.</p>
           <p class="about-this-site-copy">This site is hand coded using Foundation. It uses HTML, SASS and some Angular as well. The custom icons were created using Illustrator.</p>
-        </footer>
+        </div>
       </div>
-    </div>
+    </footer>
 
 
   <script src="https://code.jquery.com/jquery.min.js"></script>

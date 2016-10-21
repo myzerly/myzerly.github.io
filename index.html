@@ -30,67 +30,26 @@
           <p class="text-center">I live in Santa Cruz, California. I love climbing, trail running, lifting, learning code and just walking around downtown sipping on some Verve coffee.</p>
           <p class="text-center">I’m a CSM with over two years of experience working with engineers, front-end devs, product managers, product designers and customers. I managed <a href="https://www.zurb.com/notable">Notable's</a> enterprise accounts with a portfolio that included Disney, ESPN, Trip Advisor, Salesforce, Intuit, DigitasLBi and many others.</p>
           <br>
-          <ul class="footer-nav-menu">
-            <li><div class="footer-icon linkedin"><a href="https://www.linkedin.com/pub/nic-edwards/36/a77/7a5/" target="_blank"><img class="menu-icon" src="img/nav-icons/svg/linkedin-hover.svg"></a></div></li>
-            <li><div class="footer-icon github"><a href="https://www.github.com/myzerly"><img class="menu-icon" src="img/nav-icons/svg/github-hover.svg"></a></div></li>
-            <li><div class="footer-icon mail"><a href="mailto:nic.edwrds@gmail.com?Subject=Hey%20I%20saw%20your%20site!" target="_top"><img class="menu-icon" src="img/nav-icons/svg/mail-hover.svg"></a></div></li>
-          </ul>
-          <!-- <p class="text-center"><a class="custom-button black" href="index.html#work">See Some Work</a></p> -->
+          <p class="text-center"><a class="custom-button black" href="work.html">See Some Work</a></p>
         </div>
       </div>
     </section>
-    <section>
-<!-- Desktop Styles -->
-<!-- Desktop Block-grid tiles for cards Work -->
-        <div class="row">
-          <div class="small-12 large-8 small-centered column">
-            <div class="show-for-large-up" ng-controller="workController">
-              <h3 class="text-center">Work</h3>
-              <hr>
-              <ul class="small-block-grid-1 medium-block-grid-2">
-                <li ng-repeat="workItem in work">
-                  <div class="box {{workItem.imageTile}}">
-                    <div class="overlay">
-                      <h3 class="text-center hover-text work-tiles">{{workItem.tileTitle}}</h3>
-                      <a class="custom-button" href="{{workItem.lessonLink}}" target="_blank">{{workItem.buttonCopy}}</a>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-<!-- Mobile Styles -->
-<!-- Mobile/Tablet Block-grid tiles Lessons -->
-            <div class="hide-for-large-up" ng-controller="workController">
-              <h1 class="text-center">Lessons</h3>
-              <hr>
-              <ul class="text-center small-block-grid-1 medium-block-grid-3">
-                <li ng-repeat="workItem in work">
-                <a href="{{workItem.lessonLink}}" target="_blank">
-                  <div class="box box-small {{workItem.imageTile}}"></div>
-                  <h5 class="mobile-title text-center">{{workItem.tileTitle}}</h3>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-    </section>
+<!-- Footer text for site. Explains how the site was made -->
     <hr>
-    <div class="row">
+    <footer class="row">
       <div class="small-10 medium-6 large-4 small-centered columns">
         <ul class="footer-nav-menu">
           <li><div class="footer-icon linkedin"><a href="https://www.linkedin.com/pub/nic-edwards/36/a77/7a5/" target="_blank"><img class="menu-icon" src="img/nav-icons/svg/linkedin-hover.svg"></a></div></li>
           <li><div class="footer-icon github"><a href="https://www.github.com/myzerly"><img class="menu-icon" src="img/nav-icons/svg/github-hover.svg"></a></div></li>
           <li><div class="footer-icon mail"><a href="mailto:nic.edwrds@gmail.com?Subject=Hey%20I%20saw%20your%20site!" target="_top"><img class="menu-icon" src="img/nav-icons/svg/mail-hover.svg"></a></div></li>
         </ul>
-<!-- Footer text for site. Explains how the site was made -->
-        <footer>
+
+        <div>
           <p class="footer-copyright-text text-center">© 2016 Nic Edwards. All rights reserved.</p>
           <p class="about-this-site-copy">This site is hand coded using Foundation. It uses HTML, SASS and some Angular as well. The custom icons were created using Illustrator.</p>
-        </footer>
+        </div>
       </div>
-    </div>
+    </footer>
 
 
   <script src="https://code.jquery.com/jquery.min.js"></script>
