@@ -85,20 +85,20 @@ var work = [
 //   }
 // ];
 
-var cases = [
-  {
-    imageTile: "tile-prototype",
-    buttonCopy: "See More",
-    tileTitle: "Case Study: Notable Prototypes",
-    caseLink: "case_study.html"
-  },
-  {
-    imageTile: "tile-health",
-    buttonCopy: "Keynote Slides",
-    tileTitle: "Design Challenge: Apple Health",
-    caseLink: "img/apple-health.pdf"
-  }
-];
+// var cases = [
+//   {
+//     imageTile: "tile-prototype",
+//     buttonCopy: "See More",
+//     tileTitle: "Case Study: Notable Prototypes",
+//     caseLink: "case_study.html"
+//   },
+//   {
+//     imageTile: "tile-health",
+//     buttonCopy: "Keynote Slides",
+//     tileTitle: "Design Challenge: Apple Health",
+//     caseLink: "img/apple-health.pdf"
+//   }
+// ];
 
 
 })();
