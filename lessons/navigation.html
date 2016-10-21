@@ -1,0 +1,67 @@
+<!doctype html>
+<html class="no-js" lang="en" ng-app="portfolioSite">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Nic Edwards">
+    <meta name="description" content="Nic Edwards Portfolio">
+    <meta name="keywords" content="HTML,CSS,JavaScript,lessons,blog,designer,design,UX,UI,AI,visual,ZURB,University,Notable,Photoshop,Illustrator,Adobe">
+    <title>About Me</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../css/app.css">
+    <link rel="icon" type="image/png" href="../img/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../img/favicon/favicon-16x16.png" sizes="16x16" />
+    <script src="js/modernizr.js"></script>
+  </head>
+
+  <body>
+<!-- button to check on old index page for qa -->
+    <button type="button" name="button" class="button"><a href="about-me.html">back to index</a></button>
+    <div class="row">
+      <div class="small-12 medium-8 small-centered columns">
+        <h2>Why should we sketch anyways?</h2>
+
+          <p>We have access to all sorts of wonderful tools to create beautiful, functional graphical user interfaces such as Sketch, Illustrator, Photoshop, Omnigraffle and many others, so why even bother? The problem with those is you’re able to tinker, and tinkering wastes time when we’re trying to figure out in broad strokes what a navigational component looks like. Lining up all of the boxes perfectly from the start doesn’t help anyone when we haven’t fully committed to a direction. This is a process of refinement that starts from the roughest state: a sketch made of paper, a Sharpie, a highlighter and a shader. Avoiding technology beyond pen and paper is a great thing!</p>
+
+          <p><a href="http://www.wired.com/2015/09/sorry-apple-turns-designers-dont-use-ipads/">To quote Margaret Rhodes</a>, “Think about the feeling of showing someone something on your phone: You’re always ready for them to hand it back. With a piece of paper ripped from a notebook, that sense of ownership isn’t a factor.” Those are all we need to start with, let’s leave the digital tools for later. For the time being let’s focus on how to sketch a basic navigation bar.</p>
+
+          <p>
+          <img src="https://s3.amazonaws.com/university-prod/uploads/attachments/337/original/navigation-sketching.png?1442546015" />
+          </p>
+
+        <h2>How do we sketch?</h2>
+          <p>First, we need a plan of attack. We want to know what elements we’re including in the navigational component. Depending on the site or app UI we’re sketching out, we’ll want to map out what needs to be in the nav as well as the layout of the nav, i.e. top, bottom, left or right?  In this case, we’re mapping out a basic top nav in a marketing site. We’ve also chosen the following links: logo, homepage, product, about, contact and sign up.</p>
+
+          <p>
+          <img src="https://s3.amazonaws.com/university-prod/uploads/attachments/339/original/nav-1.png?1442546022" />
+          </p>
+
+          <p>When sketching the nav on the homepage layout, we’ll usually write out all of the links, but when we’re switching between pages we have a slightly different approach. We’ll scribble out the names of the links that aren’t relevant to the current sketch to call out the page we’re working on, which is “product” in this case. Since the logo and “Sign Up” were tertiary call to actions, they get an outline along the bottom and to the right-hand side of the box. They aren’t highlighted in yellow though, since they’re not the main part of the show, we want to use that color inside of the content. The line underneath the navigational elements is also shaded to show a clear breakpoint between it and the main body content.</p>
+
+          <p>
+          <img src="https://s3.amazonaws.com/university-prod/uploads/attachments/338/original/nav-2.png?1442546022" />
+          </p>
+
+        <h2>The Theory</h2>
+          <p>Notice something about these components? There’s not much to them you say? Correct, that’s the point! We’re trying to use the most basic attention getters, i.e. contrasting text and scribbles. We’re keeping this minimalist to get the basic point across. In both of these cases, we’re only using Sharpie and a shader. We do have highlighters to bring attention to important call to actions with a touch of yellow, but it’s used very sparingly. Colors aren’t the enemy, but the more colors we use, the more complicated the sketch becomes and the more time it takes to convey our ideas through the sketch. We’re not making a piece of art, we want to experiment as quickly as possible with as many different ideas in a short period of time before moving on to the higher fidelity digital tools.</p>
+
+        <h2>Takeaways:</h2>
+          <ul>
+            <li><strong>Keep it simple:</strong> don’t overcomplicate sketches with too much decoration and color.</li>
+            <li><strong>Keep it focused:</strong> highlight the page you’re on by using the contrast of text to scribble; no need to write everything out every single time.</li>
+            <li><strong>Keep it consistent:</strong> follow the common pattern set up on the initial sketch of the nav.</li>
+          </ul>
+      </div>
+    </div>
+
+  <script src="code.jquery.com/jquery.min.js"></script>
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="js/foundation.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+  </body>
+</html>

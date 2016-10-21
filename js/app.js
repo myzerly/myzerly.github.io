@@ -20,10 +20,16 @@ app.controller('casesController', function($scope){
 
 var work = [
   {
+    imageTile: "tile-prototype",
+    buttonCopy: "See More",
+    tileTitle: "Case Study: Notable Prototypes",
+    caseLink: "case_study.html"
+  },
+  {
     imageTile: "tile-navigation",
     buttonCopy: "Read More",
     tileTitle: "Sketching Navigational Components",
-    lessonLink: "http://zurb.com/university/lessons/navigating-to-success-sketching-navigational-components"
+    lessonLink: "lessons/navigation.html"
   },
   {
     imageTile: "tile-persona",
@@ -54,24 +60,30 @@ var work = [
     buttonCopy: "Read More",
     tileTitle: "Timeboxing",
     lessonLink: "http://zurb.com/university/lessons/boxin-up-that-time-timeboxing-for-the-big-win"
-  }
-
-];
-
-var visuals = [
-  {
-    imageTile: "tile-athletigen",
-    buttonCopy: "Upon Request",
-    tileTitle: "Visual Direction: Athletigen",
-    visualLink: "mailto:nic.edwrds@gmail.com?Subject=%20I'm%20Interested%20in%20Seeing%20Your%20Visuals!"
   },
   {
-    imageTile: "tile-equinix",
-    buttonCopy: "Upon Request",
-    tileTitle: "Visual Direction: Equinix",
-    visualLink: "mailto:nic.edwrds@gmail.com?Subject=%20I'm%20Interested%20in%20Seeing%20Your%20Visuals!"
+    imageTile: "tile-testing",
+    buttonCopy: "Read More",
+    tileTitle: "User Testing",
+    lessonLink: "lessons/stickies.html"
   }
+
 ];
+
+// var visuals = [
+//   {
+//     imageTile: "tile-athletigen",
+//     buttonCopy: "Upon Request",
+//     tileTitle: "Visual Direction: Athletigen",
+//     visualLink: "mailto:nic.edwrds@gmail.com?Subject=%20I'm%20Interested%20in%20Seeing%20Your%20Visuals!"
+//   },
+//   {
+//     imageTile: "tile-equinix",
+//     buttonCopy: "Upon Request",
+//     tileTitle: "Visual Direction: Equinix",
+//     visualLink: "mailto:nic.edwrds@gmail.com?Subject=%20I'm%20Interested%20in%20Seeing%20Your%20Visuals!"
+//   }
+// ];
 
 var cases = [
   {

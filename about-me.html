@@ -16,7 +16,9 @@
   </head>
 
   <body>
-    <button type="button" name="button" class="button"><a href="index.html">back to index</a></button>
+<!-- button to check on old index page for qa -->
+    <!-- <button type="button" name="button" class="button"><a href="index.html">back to index</a></button> -->
+
 <!-- About Me -->
     <section>
       <div class="row">
@@ -36,7 +38,7 @@
     <section>
 <!-- Desktop Styles -->
 <!-- Desktop Block-grid tiles for cards Lessons -->
-          <div class="small-12 large-8 medium-centered column">
+          <div class="small-12 large-8 small-centered column">
             <div class="show-for-large-up" ng-controller="workController">
               <h3 class="text-center">Lessons</h3>
               <hr>
@@ -50,22 +52,12 @@
                   </div>
                 </li>
               </ul>
-            <!-- </div> -->
-<!-- Test the tiles to close the gaps-->
-              <div class="show-for-large-up" ng-controller="workController">
-                <h3 class="text-center">Lessons</h3>
-                <hr>
-                <ul class="small-block-grid-1 medium-block-grid-3">
-                  <li ng-repeat="workItem in work">
-                    <div class="close-gaps box {{workItem.imageTile}}"></div>
-                  </li>
-                </ul>
-              </div>
+            </div>
 <!-- Desktop Block-grid tiles for cards Case Studies -->
             <div class="show-for-large-up" ng-controller="casesController">
               <h3 class="text-center">Case Studies</h3>
               <hr>
-              <ul class="small-block-grid-1 medium-block-grid-3">
+              <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-8">
                 <li ng-repeat="caseItem in cases">
                   <div class="box {{caseItem.imageTile}}">
                     <div class="overlay">
@@ -109,7 +101,7 @@
     </section>
     <hr>
     <div class="row">
-      <div class="small-8 medium-4 small-centered medium-centered columns">
+      <div class="small-10 medium-6 large-4 small-centered columns">
         <ul class="footer-nav-menu">
           <li><div class="footer-icon linkedin"><a href="https://www.linkedin.com/pub/nic-edwards/36/a77/7a5/" target="_blank"><img class="menu-icon" src="img/nav-icons/svg/linkedin-hover.svg"></a></div></li>
           <li><div class="footer-icon github"><a href="https://www.github.com/myzerly"><img class="menu-icon" src="img/nav-icons/svg/github-hover.svg"></a></div></li>
