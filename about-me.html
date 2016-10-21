@@ -16,35 +16,125 @@
   </head>
 
   <body>
-<!-- logo + top-nav for links -->
-
 <!-- About Me -->
-  <section>
-    <div class="row">
-      <div class="small-12 large-8 medium-centered column">
-        <p class="text-center"><img class="about-me-pic" src="img/nic-bishop.jpg" alt="profile picture"></p>
-        <h2 class="text-center">About Me</h2>
-        <p>Hey! My name is Nic Edwards and I live in Santa Cruz, California. I love climbing, trail running, lifting and just walking around downtown sipping on some Verve coffee.</p>
-        <p>By day I’m a CSM with experience working with engineers, front-end devs, product designers and customers. I worked on <a href="https://www.zurb.com/notable">Notable</a> for the past 2 years, a design minded collaboration tool, and managed enterprise accounts with companies such as Disney, ESPN, Trip Advisor, Salesforce, Intuit and DigitasLBi </p>
-        <br>
-        <p class="text-center"><a class="custom-button black" href="index.html#work">See Some Work</a></p>
-      <br>
-      <hr>
+    <section>
       <div class="row">
-        <div class="small-12 medium-6 medium-centered column">
-          <ul class="footer-nav-menu">
-            <li><div class="footer-icon linkedin"><a href="https://www.linkedin.com/pub/nic-edwards/36/a77/7a5/" target="_blank"><img class="menu-icon" src="img/nav-icons/svg/linkedin-hover.svg"></a></div></li>
-            <li><div class="footer-icon github"><a href="https://www.github.com/myzerly"><img class="menu-icon" src="img/nav-icons/svg/github-hover.svg"></a></li>
-            <li><div class="footer-icon mail"><a href="mailto:nic.edwrds@gmail.com?Subject=Hey%20I%20saw%20your%20site!" target="_top"><img class="menu-icon" src="img/nav-icons/svg/mail-hover.svg"></a></li>
-          </ul>
+        <div class="small-12 large-8 medium-centered column">
+          <h1 class="text-center">Hi, I'm Nic Edwards</h1>
+          <p class="text-center"><img class="about-me-pic" src="img/nic-bishop.jpg" alt="profile picture"></p>
+          <h3 class="text-center">About Me</h3>
+          <p>I live in Santa Cruz, California. I love climbing, trail running, lifting and just walking around downtown sipping on some Verve coffee.</p>
+          <p>I’m a CSM with over two years of experience working with engineers, front-end devs, product managers, product designers and customers. I managed <a href="https://www.zurb.com/notable">Notable's</a> enterprise accounts with a portfolio that included Disney, ESPN, Trip Advisor, Salesforce, Intuit, DigitasLBi and many others.</p>
           <br>
-          <footer>
-            <p class="footer-copyright-text text-center">© 2016 Nic Edwards. All rights reserved.</p>
-            <p class="about-this-site-copy">This site is hand coded using Foundation. It uses HTML, SASS and some Angular as well. The custom icons were created using Illustrator.</p>
-          </footer>
+          <p class="text-center"><a class="custom-button black" href="index.html#work">See Some Work</a></p>
+        <br>
+
+
+        <hr>
+<!-- icons for contacting me -->
+          <div class="row">
+            <div class="small-12 medium-6 medium-centered column">
+
+              <br>
+            </div>
+          </div>
         </div>
       </div>
-  </section>
+    </section>
+    <section>
+<!-- Desktop Styles -->
+<!-- Desktop Block-grid tiles for cards Lessons -->
+          <div class="small-12 large-10 medium-centered column">
+            <div class="show-for-large-up" ng-controller="workController">
+              <h3 class="text-center">Lessons</h3>
+              <hr>
+              <ul class="small-block-grid-1 medium-block-grid-3">
+                <li ng-repeat="workItem in work">
+                  <div class="box {{workItem.imageTile}}">
+                    <div class="overlay">
+                      <h3 class="text-center hover-text work-tiles">{{workItem.tileTitle}}</h3>
+                      <a class="custom-button" href="{{workItem.lessonLink}}" target="_blank">{{workItem.buttonCopy}}</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+<!-- Desktop Block-grid tiles for cards Case Studies -->
+            <div class="show-for-large-up" ng-controller="casesController">
+              <h3 class="text-center">Case Studies</h3>
+              <hr>
+              <ul class="small-block-grid-1 medium-block-grid-3">
+                <li ng-repeat="caseItem in cases">
+                  <div class="box {{caseItem.imageTile}}">
+                    <div class="overlay">
+                      <h3 class="text-center hover-text work-tiles">{{caseItem.tileTitle}}</h3>
+                      <a class="custom-button" href="{{caseItem.caseLink}}">{{caseItem.buttonCopy}}</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+<!-- Mobile Styles -->
+<!-- Mobile/Tablet Block-grid tiles Lessons -->
+            <div class="hide-for-large-up" ng-controller="workController">
+              <h1 class="text-center">Lessons</h3>
+              <hr>
+              <ul class="text-center small-block-grid-1 medium-block-grid-3">
+                <li ng-repeat="workItem in work">
+                <a href="{{workItem.lessonLink}}" target="_blank">
+                  <div class="box {{workItem.imageTile}}"></div>
+                  <h5 class="mobile-title text-center">{{workItem.tileTitle}}</h3>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+<!-- Mobile/Tablet Block-grid tiles Visuals -->
+            <div class="hide-for-large-up" ng-controller="visualsController">
+              <h1 class="text-center">Visuals</h3>
+              <hr>
+              <ul class="text-center small-block-grid-1 medium-block-grid-3">
+                <li ng-repeat="visualItem in visuals">
+                <a href="{{visualItem.lessonLink}}" target="_blank">
+                  <div class="box {{visualItem.imageTile}}"></div>
+                  <h5 class="mobile-title text-center">{{visualItem.tileTitle}}</h3>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+<!-- Mobile/Tablet Block-grid tiles Case Studies -->
+            <div class="hide-for-large-up" ng-controller="casesController">
+              <h1 class="text-center">Case Studies</h3>
+              <hr>
+              <ul class="text-center small-block-grid-1 medium-block-grid-3">
+                <li ng-repeat="caseItem in cases">
+                <a href="{{caseItem.caseLink}}" target="_blank">
+                  <div class="box {{caseItem.imageTile}}"></div>
+                  <h5 class="mobile-title text-center">{{caseItem.tileTitle}}</h3>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+    </section>
+    <hr>
+    <div class="row">
+      <div class="small-8 medium-4 small-centered medium-centered columns">
+        <ul class="footer-nav-menu">
+          <li><div class="footer-icon linkedin"><a href="https://www.linkedin.com/pub/nic-edwards/36/a77/7a5/" target="_blank"><img class="menu-icon" src="img/nav-icons/svg/linkedin-hover.svg"></a></div></li>
+          <li><div class="footer-icon github"><a href="https://www.github.com/myzerly"><img class="menu-icon" src="img/nav-icons/svg/github-hover.svg"></a></div></li>
+          <li><div class="footer-icon mail"><a href="mailto:nic.edwrds@gmail.com?Subject=Hey%20I%20saw%20your%20site!" target="_top"><img class="menu-icon" src="img/nav-icons/svg/mail-hover.svg"></a></div></li>
+        </ul>
+<!-- Footer text for site. Explains how the site was made -->
+        <footer>
+          <p class="footer-copyright-text text-center">© 2016 Nic Edwards. All rights reserved.</p>
+          <p class="about-this-site-copy">This site is hand coded using Foundation. It uses HTML, SASS and some Angular as well. The custom icons were created using Illustrator.</p>
+        </footer>
+      </div>
+    </div>
+
 
   <script src="code.jquery.com/jquery.min.js"></script>
   <script src="bower_components/angular/angular.min.js"></script>
@@ -56,13 +146,3 @@
   </script>
   </body>
 </html>
-
-<!-- potential email form for v3 -->
-        <!-- <h2>Send e-mail to someone@example.com:</h2>
-        <form action="MAILTO:nic.edwrds@gmail.com?Subject=Hey%20I%20saw%20your%20site!" method="post" enctype="text/plain"><br>
-          <input type="text" placeholder="your name">
-          <input type="text" name="email " placeholder="your email"><br>
-          <input type="text" name="comment " placeholder="your comment"><br>
-          <input class="custom-button black" type="submit" value="Send">
-          <input class="custom-button black" type="reset" value="Reset">
-        </form> -->
