@@ -1,6 +1,14 @@
 // * {
 //   border: 1px solid red;
 // }
+
+@mixin box-height-sync() {
+  background-position:50% 50%;
+  border-radius: 2px;
+  background-size: cover;
+  height: 300px;
+}
+
 h1, h2, h3, h4, h5, h6, body, span, p, li {
   font-family: 'Roboto', serif !important;
   color: #203737;
@@ -175,20 +183,28 @@ footer {
   text-align:center;
   padding-top: 30px;
   padding-bottom: 50px;
-  height: 100%;
   opacity:0;
   transition: opacity .25s ease-out;
+
+  @include box-height-sync();
 }
 
 //sets up the overlay to have a hover effect that changes the opacity so you can see it
 .box:hover {
   .overlay {
     opacity:1;
+    max-height:
   }
 }
 
 //This is potential styling for the content you insert into the hover state overlay
 .hover-text {
+  font-family:Helvetica;
+  font-weight:900;
+  color:rgba(255,255,255,0.85);
+  margin-right: auto;
+  margin-left: auto;
+  list-style-type: none;
   @media (min-width: 400px) {
     font-size:16px;
     padding: 2rem;
@@ -202,12 +218,6 @@ footer {
     padding: 0.5rem;
     padding-bottom: 2.5rem;
   }
-  font-family:Helvetica;
-  font-weight:900;
-  color:rgba(255,255,255,0.85);
-  margin-right: auto;
-  margin-left: auto;
-  list-style-type: none;
   &.work-tiles {
     margin-bottom: 1.5rem;
   }
@@ -221,27 +231,7 @@ footer {
 //It uses the "contain" property to ensure that the background
 //stays within the constraints of the parent element.
 .box {
-  // @media (min-width: 400px) {
-  //   height: 300px;
-  //   width: 300px;
-  // }
-  // @media (min-width: 645px) {
-  //   height: 200px;
-  //   width: 200px;
-  // }
-  // @media (min-width: 945px) {
-  //   height: 275px;
-  //   width: 275px;
-  // }
-
-  background-position:50% 50%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  border-radius: 2px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 0.0rem;
-  height: 300px;
+  @include box-height-sync();
 
   &.tile-navigation {
     background-image: url(../img/tile-navigation.png);
