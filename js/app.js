@@ -17,6 +17,16 @@ app.controller('casesController', function($scope){
   $scope.cases = cases;
 });
 
+//Attempting to animate hiding/ showing of work
+(function(angular) {
+  'use strict';
+angular.module('ngAnimateChildren', ['ngAnimate'])
+  .controller('MainController', function MainController() {
+    this.animateChildren = false;
+    this.enterElement = false;
+  });
+})(window.angular);
+
 
 var work = [
   {
@@ -60,14 +70,7 @@ var work = [
     buttonCopy: "Read More",
     tileTitle: "Timeboxing",
     lessonLink: "http://zurb.com/university/lessons/boxin-up-that-time-timeboxing-for-the-big-win"
-  },
-  {
-    imageTile: "tile-testing",
-    buttonCopy: "Read More",
-    tileTitle: "User Testing",
-    lessonLink: "lessons/stickies.html"
   }
-
 ];
 
 // var visuals = [
