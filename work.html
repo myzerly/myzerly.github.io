@@ -37,7 +37,7 @@
 <!-- Desktop Styles -->
 <!-- Desktop Block-grid tiles for cards Work -->
         <div class="row">
-          <div class="small-12 large-8 small-centered column">
+          <div class="small-8 small-centered column">
             <div class="show-for-large-up" ng-controller="workController">
               <ul class="small-block-grid-1 medium-block-grid-2">
                 <li ng-repeat="workItem in work">
@@ -54,16 +54,21 @@
 
 <!-- Mobile Styles -->
 <!-- Mobile/Tablet Block-grid tiles Lessons -->
-            <div class="hide-for-large-up" ng-controller="workController">
-              <ul class="text-center small-block-grid-1 medium-block-grid-3">
-                <li ng-repeat="workItem in work">
-                <a href="{{workItem.lessonLink}}">
-                  <div class="box box-small {{workItem.imageTile}}"></div>
-                  <h5 class="mobile-title text-center">{{workItem.tileTitle}}</h3>
-                  </a>
-                </li>
-              </ul>
+          <div class="row">
+            <div class="small-10 column small-centered">
+              <div class="hide-for-large-up" ng-controller="workController">
+                <ul class="text-center small-block-grid-1 medium-block-grid-3">
+                  <li ng-repeat="workItem in work">
+                  <a href="{{workItem.lessonLink}}">
+                    <div class="box box-small {{workItem.imageTile}}"></div>
+                    <h5 class="mobile-title text-center">{{workItem.tileTitle}}</h3>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
+          </div>
+
           </div>
         <br>
         <br>
