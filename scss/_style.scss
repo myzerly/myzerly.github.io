@@ -371,24 +371,24 @@ input {
 
 
 // Checks which media querie you've loaded
-@media (min-width: 400px) {
-  body::before {
-    content: 'Small';
-    position: fixed;
-    top: 0;
-    right: 0;
-    background: #eee;
-    padding: 5px;
-  }
-
-}
-@media (min-width: 625px) {
-  body::before {
-    content: 'Medium';
-  }
-}
-@media (min-width: 1000px) {
-  body::before {
-    content: 'Large';
-  }
-}
+// @media (min-width: 400px) {
+//   body::before {
+//     content: 'Small';
+//     position: fixed;
+//     top: 0;
+//     right: 0;
+//     background: #eee;
+//     padding: 5px;
+//   }
+//
+// }
+// @media (min-width: 625px) {
+//   body::before {
+//     content: 'Medium';
+//   }
+// }
+// @media (min-width: 1000px) {
+//   body::before {
+//     content: 'Large';
+//   }
+// }
