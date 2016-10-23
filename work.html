@@ -55,23 +55,23 @@
 
 <!-- Mobile Styles -->
 <!-- Mobile/Tablet Block-grid tiles Lessons -->
-          <div class="row">
-            <div class="small-10 column small-centered">
-              <div class="hide-for-large-up" ng-controller="workController">
-                <ul class="text-center small-block-grid-1 medium-block-grid-3">
-                  <li ng-repeat="workItem in work">
-                  <a href="{{workItem.lessonLink}}">
-                    <div class="box box-small {{workItem.imageTile}}"></div>
-                    <h5 class="mobile-title text-center">{{workItem.tileTitle}}</h3>
-                    </a>
-                  </li>
-                </ul>
-              </div>
+        <div class="row">
+          <div class="small-10 column small-centered">
+            <div class="hide-for-large-up" ng-controller="workController">
+              <ul class="text-center small-block-grid-1 medium-block-grid-3">
+                <li ng-repeat="workItem in work">
+                <a href="{{workItem.lessonLink}}">
+                  <div class="box box-small {{workItem.imageTile}}"></div>
+                  <h5 class="mobile-title text-center">{{workItem.tileTitle}}</h3>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
+<!-- navigational buttons -->
+        </div>
         <br>
-        <br>
-        <p class="text-center"><a class="custom-button black" href="index.html">Home</a></p>
+        <p class="text-center"><span class="nav-button"><a class="custom-button black" href="index.html">Home</a></span><span class="nav-button"><a class="custom-button black" href="csm_resume.html">Resume</a></span></p>
         <br>
     </section>
     <!-- Footer text for site. Explains how the site was made -->
